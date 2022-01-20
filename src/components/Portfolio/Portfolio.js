@@ -1,11 +1,8 @@
 import React from 'react';
+import PortfolioList from './PortfolioList';
 
 const Portfolio = () => {
-  return (
-    <div>
-      <span>h</span>
-    </div>
-  );
+  return <PortfolioList />;
 };
 
 export default Portfolio;
