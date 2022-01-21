@@ -1,5 +1,5 @@
 import React from 'react';
-import { portfolio } from '../../data/portfolio';
+import { pageTextContent } from '../../data/pageTextContent';
 import PortfolioListItem from './PortfolioListItem/PortfolioListItem';
 import styled from 'styled-components';
 
@@ -22,7 +22,7 @@ const PortfolioList = () => {
   return (
     <Wrapper>
       <StyledList>
-        {portfolio.map((userData, i) => (
+        {pageTextContent.portfolio.map((userData, i) => (
           <PortfolioListItem userData={userData} key={i} />
         ))}
       </StyledList>
