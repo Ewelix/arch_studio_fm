@@ -2,7 +2,8 @@ export const theme = {
   colors: {
     white: '#FFF',
     lightGray: '#EEEFF4',
-    darkGray: '#7D828F',
+    mediumGray: '#7D828F',
+    darkGray: '#60636D',
     black: '#1B1D23',
   },
   fontWeight: {
@@ -11,9 +12,10 @@ export const theme = {
     bold: 700,
   },
   fontSize: {
-    xs: '15px',
-    s: '18px',
-    m: '20px',
+    xxs: '15px',
+    xs: '18px',
+    s: '20px',
+    m: '40px',
     l: '56px',
     xl: '80px',
     xxl: '200px',
