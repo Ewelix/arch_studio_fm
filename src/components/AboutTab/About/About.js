@@ -1,8 +1,9 @@
 import React from 'react';
-import { pageTextContent } from '../../data/pageTextContent';
+import { pageTextContent } from '../../../data/pageTextContent';
+import LeadersList from '../LeadersList/LeadersList';
 
 const About = () => {
-  const { leadersList: { name, position } } = pageTextContent;
+  const { leadersList } = pageTextContent;
   return (
     <section>
       <div>
@@ -20,15 +21,7 @@ const About = () => {
         </div>
       <div>
         <h2>The Leaders</h2>
-        {pageTextContent.leadersList.map((leader) => {
-          return (
-            <div>
-              <img src='' alt='' />
-              <p>{leader.name}</p>
-              <p>{leader.position}</p>
-            </div>
-          )
-        })}
+        <LeadersList/>
       </div>
     </section>
   );
