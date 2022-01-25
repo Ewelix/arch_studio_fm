@@ -69,6 +69,7 @@ export const StyledList = styled.ul`
     color: ${({ theme }) => theme.colors.white};
     background-size: cover;
     background-repeat: no-repeat;
+    opacity: 1;
 
     @media (${({ theme }) => theme.device.l}) {
       max-width: 350px;
@@ -83,6 +84,12 @@ export const StyledList = styled.ul`
       bottom: 0;
       content: '';
       background-color: rgba(0, 0, 0, 20%);
+    }
+    
+    &:hover {
+      opacity: 0.7;
+      cursor: pointer;
+      transition: opacity 0.5s;
     }
 
     &__name,
