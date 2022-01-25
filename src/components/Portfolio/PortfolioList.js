@@ -4,7 +4,7 @@ import PortfolioListItem from './PortfolioListItem/PortfolioListItem';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-  padding: 30px 40px;
+  padding: 30px 20px;
 `;
 
 // przedrostek Styled dla generycznych elementow

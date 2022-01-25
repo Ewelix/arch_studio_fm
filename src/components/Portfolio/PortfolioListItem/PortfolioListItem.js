@@ -6,8 +6,8 @@ const PortfolioListItem = ({ userData: { id, name, date } }) => {
   return (
     <Wrapper>
       <div className={`project project-${id}`}>
-        <p>{name}</p>
-        <p>{date}</p>
+        <p className="project__name">{name}</p>
+        <p className="project__date">{date}</p>
       </div>
 
       {/*<StyledButton>X</StyledButton>*/}
@@ -18,7 +18,7 @@ const PortfolioListItem = ({ userData: { id, name, date } }) => {
   );
 };
 
-PortfolioListItem.PropTypes = {
+PortfolioListItem.propTypes = {
   userData: PropTypes.shape({
     name: PropTypes.string,
     date: PropTypes.string,

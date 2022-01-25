@@ -49,10 +49,14 @@ import project12L from '../../../assets/portfolio/desktop/image-paramour.jpg';
 
 
 export const Wrapper = styled.div`
+  
+  
   .project {
     position: relative;
     width: 100%;
     height: 14rem;
+    margin-top: 20px;
+    color: ${({theme}) => theme.colors.white};
     background-size: cover;
     background-repeat: no-repeat;
     
@@ -63,7 +67,27 @@ export const Wrapper = styled.div`
       right: 0;
       bottom: 0;
       content: '';
-      background-color: rgba(0,0,0,10%);
+      background-color: rgba(0,0,0,20%);
+    }
+
+    &__name,
+    &__date {
+      position: absolute;
+      left: 20px;
+    }
+    
+    &__name {
+      bottom: 30px;
+      z-index: 1;
+      font-size: ${({theme}) => theme.fontSize.xs};
+      font-weight: ${({theme}) => theme.fontWeight.bold};
+    }
+
+    &__date {
+      bottom: 10px;
+      z-index: 2;
+      font-size: ${({theme}) => theme.fontSize.xxs};
+      font-weight: ${({theme}) => theme.fontWeight.medium};
     }
   }
   
@@ -71,12 +95,12 @@ export const Wrapper = styled.div`
     background-image: url(${project1S});
   }
 
-  @media screen and (min-width: 520px) {
+  @media screen and (${({theme}) => theme.device.s}) {
     .project-1 {
       background-image: url(${project1M});
     }
   }
-  @media screen and (min-width: 1024px) {
+  @media screen and (${({theme}) => theme.device.l}) {
     .project-1 {
       background-image: url(${project1L});
     }
@@ -86,12 +110,12 @@ export const Wrapper = styled.div`
     background-image: url(${project2S});
   }
 
-  @media screen and (min-width: 520px) {
+  @media screen and (${({theme}) => theme.device.s}) {
     .project-2 {
       background-image: url(${project2M});
     }
   }
-  @media screen and (min-width: 1024px) {
+  @media screen and (${({theme}) => theme.device.l}) {
     .project-2 {
       background-image: url(${project2L});
     }
@@ -101,12 +125,12 @@ export const Wrapper = styled.div`
     background-image: url(${project3S});
   }
 
-  @media screen and (min-width: 520px) {
+  @media screen and (${({theme}) => theme.device.s}) {
     .project-3 {
       background-image: url(${project3M});
     }
   }
-  @media screen and (min-width: 1024px) {
+  @media screen and (${({theme}) => theme.device.l}) {
     .project-3 {
       background-image: url(${project3L});
     }
@@ -116,12 +140,12 @@ export const Wrapper = styled.div`
     background-image: url(${project4S});
   }
 
-  @media screen and (min-width: 520px) {
+  @media screen and (${({theme}) => theme.device.s}) {
     .project-4 {
       background-image: url(${project4M});
     }
   }
-  @media screen and (min-width: 1024px) {
+  @media screen and (${({theme}) => theme.device.l}) {
     .project-4 {
       background-image: url(${project4L});
     }
@@ -131,12 +155,12 @@ export const Wrapper = styled.div`
     background-image: url(${project5S});
   }
 
-  @media screen and (min-width: 520px) {
+  @media screen and (${({theme}) => theme.device.s}) {
     .project-5 {
       background-image: url(${project5M});
     }
   }
-  @media screen and (min-width: 1024px) {
+  @media screen and (${({theme}) => theme.device.l}) {
     .project-5 {
       background-image: url(${project5L});
     }
@@ -146,12 +170,12 @@ export const Wrapper = styled.div`
     background-image: url(${project6S});
   }
 
-  @media screen and (min-width: 520px) {
+  @media screen and (${({theme}) => theme.device.s}) {
     .project-6 {
       background-image: url(${project6M});
     }
   }
-  @media screen and (min-width: 1024px) {
+  @media screen and (${({theme}) => theme.device.l}) {
     .project-6 {
       background-image: url(${project6L});
     }
@@ -161,12 +185,12 @@ export const Wrapper = styled.div`
     background-image: url(${project7S});
   }
 
-  @media screen and (min-width: 520px) {
+  @media screen and (${({theme}) => theme.device.s}) {
     .project-7 {
       background-image: url(${project7M});
     }
   }
-  @media screen and (min-width: 1024px) {
+  @media screen and (${({theme}) => theme.device.l}) {
     .project-7 {
       background-image: url(${project7L});
     }
@@ -176,12 +200,12 @@ export const Wrapper = styled.div`
     background-image: url(${project8S});
   }
 
-  @media screen and (min-width: 520px) {
+  @media screen and (${({theme}) => theme.device.s}) {
     .project-8 {
       background-image: url(${project8M});
     }
   }
-  @media screen and (min-width: 1024px) {
+  @media screen and (${({theme}) => theme.device.l}) {
     .project-8 {
       background-image: url(${project8L});
     }
@@ -191,12 +215,12 @@ export const Wrapper = styled.div`
     background-image: url(${project9S});
   }
 
-  @media screen and (min-width: 520px) {
+  @media screen and (${({theme}) => theme.device.s}) {
     .project-9 {
       background-image: url(${project9M});
     }
   }
-  @media screen and (min-width: 1024px) {
+  @media screen and (${({theme}) => theme.device.l}) {
     .project-9 {
       background-image: url(${project9L});
     }
@@ -206,12 +230,12 @@ export const Wrapper = styled.div`
     background-image: url(${project10S});
   }
 
-  @media screen and (min-width: 520px) {
+  @media screen and (${({theme}) => theme.device.s}) {
     .project-10 {
       background-image: url(${project10M});
     }
   }
-  @media screen and (min-width: 1024px) {
+  @media screen and (${({theme}) => theme.device.l}) {
     .project-10 {
       background-image: url(${project10L});
     }
@@ -221,12 +245,12 @@ export const Wrapper = styled.div`
     background-image: url(${project11S});
   }
 
-  @media screen and (min-width: 520px) {
+  @media screen and (${({theme}) => theme.device.s}) {
     .project-11 {
       background-image: url(${project11M});
     }
   }
-  @media screen and (min-width: 1024px) {
+  @media screen and (${({theme}) => theme.device.l}) {
     .project-11 {
       background-image: url(${project11L});
     }
@@ -236,12 +260,12 @@ export const Wrapper = styled.div`
     background-image: url(${project12S});
   }
 
-  @media screen and (min-width: 520px) {
+  @media screen and (${({theme}) => theme.device.s}) {
     .project-12 {
       background-image: url(${project12M});
     }
   }
-  @media screen and (min-width: 1024px) {
+  @media screen and (${({theme}) => theme.device.l}) {
     .project-12 {
       background-image: url(${project12L});
     }
