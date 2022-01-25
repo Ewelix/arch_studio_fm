@@ -1,20 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Wrapper } from './PortoflioListItem.styles';
 
 const PortfolioListItem = ({ userData: { id, name, date } }) => {
   return (
-    <Wrapper>
-      <div className={`project project-${id}`}>
+      <li className={`project project-${id}`}>
         <p className="project__name">{name}</p>
         <p className="project__date">{date}</p>
-      </div>
-
-      {/*<StyledButton>X</StyledButton>*/}
-      {/*<StyledButton isSecondary isSquare="20px">*/}
-      {/*  XX*/}
-      {/*</StyledButton>*/}
-    </Wrapper>
+      </li>
   );
 };
 
