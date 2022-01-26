@@ -19,4 +19,8 @@ export const GlobalStyle = createGlobalStyle`
   button {
     font-family: 'Spartan', sans-serif;
   }
+  
+  img {
+    max-width: 100%;
+  }
 `;

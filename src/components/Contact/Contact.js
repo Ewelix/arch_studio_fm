@@ -23,6 +23,7 @@ const Contact = () => {
         <SectionTitle title="Contact Details" />
         <ContactList />
         <img
+          className="map-img"
           src={mapImgS}
           srcSet={`${mapImgS} 300w, ${mapImgM} 768w, ${mapImgL} 1100w`}
           alt=""
