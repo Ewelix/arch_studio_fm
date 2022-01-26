@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import Root from './Root';
+import Root from './Root/Root';
 
 test('renders learn react link', () => {
   render(<Root />);

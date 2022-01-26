@@ -1,13 +1,16 @@
 import React from 'react';
+import { Wrapper } from '../../Root/Root.styles';
 
 const Nav = () => {
   return (
-    <ul>
-      <li>Arch</li>
-      <li>Portfolio</li>
-      <li>About Us</li>
-      <li>Contact</li>
-    </ul>
+    <Wrapper>
+      <ul>
+        <li>Arch</li>
+        <li>Portfolio</li>
+        <li>About Us</li>
+        <li>Contact</li>
+      </ul>
+    </Wrapper>
   );
 };
 
