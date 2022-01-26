@@ -2,6 +2,14 @@ import styled from 'styled-components';
 
 export const StyledListItem = styled.div`
   padding: 15px 0;
+
+  @media(${({theme}) => theme.device.m}) {
+    padding: 10px;
+
+    img {
+      max-width: 280px;
+    }
+  }
   
   p {
     line-height: 15px;

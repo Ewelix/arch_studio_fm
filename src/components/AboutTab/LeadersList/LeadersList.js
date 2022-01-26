@@ -2,7 +2,7 @@ import React from 'react';
 import { pageTextContent } from '../../../data/pageTextContent';
 import LeadersListItem from '../LeadersListItem/LeadersListItem';
 import SectionTitle from '../../SectionTitle/SectionTitle';
-import { StyledLeadersList } from './LeadersList.styles';
+import { StyledLeadersList, SectionWrapper } from './LeadersList.styles';
 
 const LeadersList = () => {
   const { leadersList } = pageTextContent;
@@ -10,11 +10,13 @@ const LeadersList = () => {
   return (
     <StyledLeadersList>
       <SectionTitle title="The Leaders"/>
-      {leadersList.map(({ name, position }, i) => {
-        return (
-          <LeadersListItem name={name} position={position} i={i} />
-        );
-      })}
+        <SectionWrapper>
+        {leadersList.map(({ name, position }, i) => {
+          return (
+            <LeadersListItem name={name} position={position} i={i} />
+          );
+        })}
+        </SectionWrapper>
     </StyledLeadersList>
   )
 };

@@ -37,13 +37,15 @@ export const ImageWrapper = styled.div`
 export const SectionWrapper = styled.section`
   padding: 5px 20px;
   
+  @media(${({theme}) => theme.device.l}) {
+    display: flex;
+  }
+`;
+
+export const SectionContainer = styled.div`
   p {
     color: ${({theme}) => theme.colors.darkGray};
     font-size: ${({theme}) => theme.fontSize.xxs};
     line-height: 25px;
   }
-`;
-
-export const Wrapper = styled.div`
-  
 `;
