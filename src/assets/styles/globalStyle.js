@@ -21,6 +21,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   
   img {
+    display: block;
     max-width: 100%;
   }
 `;
