@@ -4,25 +4,15 @@ import LeadersList from '../LeadersList/LeadersList';
 import SectionTitle from '../../SectionTitle/SectionTitle';
 import { ImageWrapper, SectionWrapper, SectionContainer } from './About.styles';
 import { Wrapper } from '../../../Root/Root.styles';
-import heroImgM from './../../../assets/mobile/image-hero.jpg';
 import heritageImg from './../../../assets/desktop/image-heritage.jpg';
 
+import IntroSection from '../../IntroSection/IntroSection';
+
 const About = () => {
-  const { leadersList } = pageTextContent;
+  const { intro: { about } } = pageTextContent;
   return (
     <Wrapper>
-      <ImageWrapper>
-        <img className="hero-img" src={heroImgM} alt='' />
-      </ImageWrapper>
-      <SectionWrapper>
-        <SectionTitle title="Your team of professionals" />
-        <p>
-          Our small team of world-class professionals will work with you every
-          step of the way. Strong relationships are at the core of everything we
-          do. This extends to the relationship our projects have with their
-          surroundings.
-        </p>
-      </SectionWrapper>
+      <IntroSection {...about } type="about"/>
       <div>
         <SectionWrapper>
           <SectionContainer>
@@ -36,7 +26,7 @@ const About = () => {
               Speciliazing in Urban Design allowed us to focus on creating
               exceptional structures that live in harmony with their surroundings.
               We consider every detail from every surrounding element to inform
-              our designs.{' '}
+              our designs.
             </p>
             <p>
               Our small team of world-class professionals provides input on every

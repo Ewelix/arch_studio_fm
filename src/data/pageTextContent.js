@@ -61,6 +61,18 @@ export const pageTextContent = {
       date: 'February 2008',
     },
   ],
+  intro: {
+    about: {
+      header: 'About',
+      title: 'Your team of professionals',
+      text: 'Our small team of world-class professionals will work with you every step of the way. Strong relationships are at the core of everything we do. This extends to the relationship our projects have with their surroundings.',
+    },
+    contact: {
+      header: 'Contact',
+      title: 'Tell us about your project',
+      text: 'We’d love to hear more about your project. Please, leave a message below or give us a call. We have two offices, one in Texas and one in Tennessee. If you find yourself nearby, come say hello!',
+    }
+  },
   leadersList: [
     {
       name: 'Jake Richards',
@@ -82,15 +94,15 @@ export const pageTextContent = {
   contactDetails: [
     {
       office: 'Main Office',
-      mail: 'Mail :		archone@mail.com',
-      address: 'Address :	1892  Chenoweth Drive TN',
-      phone: 'Phone : 123-456-3451',
+      mail: 'archone@mail.com',
+      address: '1892  Chenoweth Drive TN',
+      phone: '123-456-3451',
     },
     {
       office: 'Office II',
-      mail: 'Mail : archtwo@mail.com',
-      address: 'Address : 3399  Wines Lane TX',
-      phone: 'Phone : 832-123-4321',
+      mail: 'archtwo@mail.com',
+      address: '3399  Wines Lane TX',
+      phone: '832-123-4321',
     },
   ],
 };
