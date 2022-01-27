@@ -4,6 +4,10 @@ export const Wrapper = styled.div`
   @media(${({theme}) => theme.device.m}) {
     padding-bottom: 5%;
   }
+
+  @media(${({theme}) => theme.device.xl}) {
+    display: flex;
+  }
 `;
 
 export const ImageWrapper = styled.div`
@@ -52,15 +56,14 @@ export const SectionWrapper = styled.div`
     }
   }
 
-  @media(${({theme}) => theme.device.l}) {
-    left: 45%;
-    height: unset;
-    padding-top: 7%;
-    
-    
-    
+  @media(${({theme}) => theme.device.xl}) {
+    position: relative;
+    align-self: end;
+    margin-top: 0;
+    margin-left: -150px;
+    padding-top: 150px;
+    padding-left: 12%;
   }
-
 
   h2 {
     @media(${({theme}) => theme.device.m}) {
@@ -69,9 +72,9 @@ export const SectionWrapper = styled.div`
       right: 0;
     }
 
-    @media(${({theme}) => theme.device.l}) {
-      top: 18%;
-      right: 1%;
+    @media(${({theme}) => theme.device.xl}) {
+      top: -25%;
+      left: -4%;
     }
   }
 

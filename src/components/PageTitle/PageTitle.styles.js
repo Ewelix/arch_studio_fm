@@ -10,7 +10,7 @@ export const StyledTitle = styled.h2`
     font-size: ${({theme}) => theme.fontSize.xxl};
   }
 
-  @media(${({theme}) => theme.device.l}) {
+  @media(${({theme}) => theme.device.xl}) {
     font-size: ${({theme}) => theme.fontSize.xxxl};
   }
 `
