@@ -2,13 +2,13 @@ import React from 'react';
 import { pageTextContent } from '../../data/pageTextContent';
 import ContactListItem from '../ContactListItem/ContactListItem';
 
-const ContactList = ({ u }) => {
+const ContactList = () => {
   const { contactDetails } = pageTextContent;
 
   return (
     <>
-      {contactDetails.map((userData, i) => {
-        return <ContactListItem userData={userData} key={i} />;
+      {contactDetails.map((userData, index) => {
+        return <ContactListItem userData={userData} key={index} index={index} />;
       })}
     </>
   );

@@ -14,7 +14,8 @@ export const SectionWrapper = styled.div`
     
     .map-img {
       flex-basis: 100%;
-      margin-top: 7%;
+      margin: 7% auto 0;
+      
     }
   }
 `

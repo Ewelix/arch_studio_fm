@@ -30,7 +30,8 @@ export const theme = {
     m: '40px',
     l: '56px',
     xl: '80px',
-    xxl: '200px',
+    xxl: '120px',
+    xxxl: '200px',
   },
   device: {
     xs: `min-width: ${size.width.xs}px`,

@@ -2,7 +2,11 @@ import React from 'react';
 import MapButton from '../MapButton/MapButton';
 import { Wrapper, StyledList } from './ContactListItem.styles';
 
-const ContactListItem = ({ userData: { office, mail, address, phone } }) => {
+const showIndex = (index) => {
+  console.log(`index nr ${index+1}`)
+}
+
+const ContactListItem = ({ userData: { office, mail, address, phone }, index }) => {
   return (
     <Wrapper>
       <h6>{office}</h6>
@@ -11,7 +15,7 @@ const ContactListItem = ({ userData: { office, mail, address, phone } }) => {
         <li>Address : {address}</li>
         <li>Phone : {phone}</li>
       </StyledList>
-      <MapButton />
+      <MapButton onClick={() => showIndex(index)}/>
     </Wrapper>
   );
 };

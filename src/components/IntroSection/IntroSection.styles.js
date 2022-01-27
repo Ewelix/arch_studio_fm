@@ -1,35 +1,84 @@
 import styled from 'styled-components';
 
+export const Wrapper = styled.div`
+  @media(${({theme}) => theme.device.m}) {
+    padding-bottom: 5%;
+  }
+`;
+
 export const ImageWrapper = styled.div`
   position: relative;
+  max-height: 300px;
+  overflow: hidden;
 
-  ::before {
-    position: absolute;
-    bottom: -1px;
-    z-index: 3;
-    width: 90%;
-    height: 45px;
-    background-color: ${({theme}) => theme.colors.white};
-    content: "";
-  }
-  
-  ::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    content: "";
-    background-color: rgba(0, 0, 0, 40%);
+  @media(${({theme}) => theme.device.m}) {
+    max-height: unset;
+    overflow: hidden;
   }
 
-  .hero-img {
+  img {
     position: relative;
     width: 100vw;
     top: 0;
     left: 0;
     z-index:1;
     display: block;
+
+    @media(${({theme}) => theme.device.m}) {
+      width: 100%;
+      max-width: unset;
+    }
   }
 `;
+
+export const SectionWrapper = styled.div`
+  position: relative;
+  z-index: 3;
+  max-width: 92%;
+  padding: 20px 0 20px 30px;
+  margin-top: -50px;
+  background: ${({theme}) => theme.colors.white};
+
+  @media(${({theme}) => theme.device.m}) {
+    position: absolute;
+    top: 35%;
+    width: 515px;
+    margin-left: 60px;
+    padding-top: 50px;
+    padding-left: 8%;
+
+    p {
+      max-width: 430px;
+    }
+  }
+
+  @media(${({theme}) => theme.device.l}) {
+    left: 45%;
+    height: unset;
+    padding-top: 7%;
+    
+    
+    
+  }
+
+
+  h2 {
+    @media(${({theme}) => theme.device.m}) {
+      position: absolute;
+      top: -20%;
+      right: 0;
+    }
+
+    @media(${({theme}) => theme.device.l}) {
+      top: 18%;
+      right: 1%;
+    }
+  }
+
+  p {
+    color: ${({theme}) => theme.colors.darkGray};
+    font-size: ${({theme}) => theme.fontSize.xxs};
+    font-weight: ${({theme}) => theme.fontWeight.medium};
+    line-height: 25px;
+  }
+`
