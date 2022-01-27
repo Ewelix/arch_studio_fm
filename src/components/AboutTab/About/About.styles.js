@@ -7,8 +7,9 @@ export const SectionWrapper = styled.section`
     padding: 0 0 15% 0;
   }
   
-  @media(${({theme}) => theme.device.l}) {
+  @media(${({theme}) => theme.device.xl}) {
     display: flex;
+    justify-content: space-between;
   }
   
   p {
@@ -26,3 +27,9 @@ export const SectionWrapper = styled.section`
     }
   }
 `;
+
+export const SectionContainer = styled.div`
+  @media(${({theme}) => theme.device.xl}) {
+    max-width: 440px;
+  }
+`

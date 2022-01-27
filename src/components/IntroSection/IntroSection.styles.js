@@ -60,7 +60,7 @@ export const SectionWrapper = styled.div`
     position: relative;
     align-self: end;
     margin-top: 0;
-    margin-left: -150px;
+    margin-left: -180px;
     padding-top: 150px;
     padding-left: 12%;
   }
