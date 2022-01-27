@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   @media(${({theme}) => theme.device.m}) {
-    padding-bottom: 5%;
+    padding-bottom: 15%;
   }
 
   @media(${({theme}) => theme.device.xl}) {

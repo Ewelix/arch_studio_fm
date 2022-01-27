@@ -4,11 +4,15 @@ export const StyledListItem = styled.div`
   padding: 15px 0;
 
   @media(${({theme}) => theme.device.m}) {
-    padding: 10px;
+    width: 50%;
 
     img {
       max-width: 280px;
     }
+  }
+
+  @media(${({theme}) => theme.device.xl}) {
+    width: auto;
   }
   
   p {
@@ -24,5 +28,4 @@ export const StyledItemTitle = styled.p`
 export const StyledItemSubtitle = styled.p`
   font-size: ${({theme}) => theme.fontSize.xs};
   color: ${({theme}) => theme.colors.darkGray};
-  
 `;

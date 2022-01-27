@@ -2,7 +2,7 @@ import React from 'react';
 import { pageTextContent } from '../../../data/pageTextContent';
 import LeadersList from '../LeadersList/LeadersList';
 import SectionTitle from '../../SectionTitle/SectionTitle';
-import { ImageWrapper, SectionWrapper, SectionContainer } from './About.styles';
+import { SectionWrapper } from './About.styles';
 import { Wrapper } from '../../../Root/Root.styles';
 import heritageImg from './../../../assets/desktop/image-heritage.jpg';
 
@@ -15,7 +15,7 @@ const About = () => {
       <IntroSection {...about } type="about"/>
       <div>
         <SectionWrapper>
-          <SectionContainer>
+          <div>
             <SectionTitle title="Our Heritage" />
             <p>
               Founded in 2007, we started as a trio of architects. Our
@@ -32,9 +32,9 @@ const About = () => {
               Our small team of world-class professionals provides input on every
               project.
             </p>
-          </SectionContainer>
+          </div>
           {/* jesli mobile */}
-          <img src={heritageImg} alt=""/>
+          <img className="heritage-img" src={heritageImg} alt=""/>
         </SectionWrapper>
       </div>
       <SectionWrapper>
