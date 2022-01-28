@@ -16,7 +16,7 @@ const IntroSection = ({header, title, text, type}) => {
         {type === "about" ? (
           <img srcSet={`${aboutImgS} 360w, ${aboutImgM} 720w, ${aboutImgL} 1400w`} alt=""/>
         ) : (
-          <img srcSet={`${contactImgS} 360w, ${contactImgM} 728w, ${contactImgL} 1400w`} alt=""/>
+          <img srcSet={`${contactImgS} 360w, ${contactImgM} 720w, ${contactImgL} 1400w`} alt=""/>
           )
         }
       </ImageWrapper>
