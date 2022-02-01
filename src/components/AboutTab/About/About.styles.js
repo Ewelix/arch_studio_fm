@@ -12,13 +12,6 @@ export const SectionWrapper = styled.section`
     justify-content: space-between;
   }
   
-  p {
-    color: ${({theme}) => theme.colors.darkGray};
-    font-size: ${({theme}) => theme.fontSize.xxs};
-    font-weight: ${({theme}) => theme.fontWeight.medium};
-    line-height: 25px;
-  }
-  
   .heritage-img {
     display: none;
 

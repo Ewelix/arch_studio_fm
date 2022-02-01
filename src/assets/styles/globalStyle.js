@@ -24,4 +24,11 @@ export const GlobalStyle = createGlobalStyle`
     display: block;
     max-width: 100%;
   }
+  
+  p {
+    color: ${({theme}) => theme.colors.darkGray};
+    font-size: ${({theme}) => theme.fontSize.xxs};
+    font-weight: ${({theme}) => theme.fontWeight.medium};
+    line-height: 25px;
+  }
 `;
