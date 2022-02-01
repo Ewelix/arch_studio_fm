@@ -51,7 +51,7 @@ import project12L from '../../../assets/portfolio/desktop/image-paramour.jpg';
 
 export const StyledList = styled.ul`
   width: 100%;
-  padding: 30px 20px;
+  padding: 0 20px 30px;
   list-style: none;
   margin: 0;
 

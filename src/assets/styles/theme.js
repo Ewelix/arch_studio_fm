@@ -15,7 +15,9 @@ export const theme = {
     lightGray: '#EEEFF4',
     mediumGray: '#7D828F',
     darkGray: '#60636D',
+    bluishGray: '#C8CCD8',
     black: '#1B1D23',
+    border: '#979797',
   },
   fontWeight: {
     light: 300,

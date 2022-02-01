@@ -5,7 +5,6 @@ import Nav from '../Nav/Nav';
 const Home = () => {
   return (
     <Wrapper>
-      <Nav/>
     </Wrapper>
   )
 };

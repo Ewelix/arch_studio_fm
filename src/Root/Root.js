@@ -7,21 +7,22 @@ import { GlobalStyle } from '../assets/styles/globalStyle';
 import '../App.css';
 import { ThemeProvider } from 'styled-components';
 import { theme } from '../assets/styles/theme';
+import Nav from '../components/Nav/Nav';
 
 const Root = () => {
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyle />
-      <Router>
-        <Switch>
-          {/*<div>hi</div>*/}
-          <Route exact path="/" component={Home} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/portfolio" component={Portfolio} />
-          <Route exact path="/contact" component={Contact} />
-        </Switch>
-      </Router>
-    </ThemeProvider>
+    <Router>
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+          <Nav/>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/portfolio" component={Portfolio} />
+            <Route exact path="/contact" component={Contact} />
+          </Switch>
+      </ThemeProvider>
+    </Router>
   );
 };
 
