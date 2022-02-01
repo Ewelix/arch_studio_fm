@@ -1,11 +1,17 @@
 import React from 'react';
 import SectionTitle from '../SectionTitle/SectionTitle';
-import { Wrapper } from './HomeAbout.styles';
+import { Wrapper, SectionContainer, SectionContent } from './HomeAbout.styles';
+import LinkButton from '../LinkButton/LinkButton';
 
 const HomeAbout = () => {
   return (
     <Wrapper>
-      <SectionTitle title="Small team, big ideas" />
+      <SectionContainer>
+        <SectionContent>
+          <SectionTitle title="Small team, big ideas" />
+          <LinkButton text="About Us" to="/about"/>
+        </SectionContent>
+      </SectionContainer>
     </Wrapper>
   );
 };

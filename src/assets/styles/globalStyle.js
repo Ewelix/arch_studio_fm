@@ -20,6 +20,10 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Spartan', sans-serif;
   }
   
+  a {
+    text-decoration: none;
+  }
+  
   img {
     display: block;
     max-width: 100%;
