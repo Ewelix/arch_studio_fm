@@ -1,13 +1,15 @@
 import React from 'react';
 import { Wrapper } from '../../Root/Root.styles';
-import Nav from '../Nav/Nav';
 import Welcome from '../Welcome/Welcome';
+import HomeAbout from '../HomeAbout/HomeAbout';
+import HomePortfolio from '../HomePortfolio/HomePortfolio';
 
 const Home = () => {
   return (
     <Wrapper>
       <Welcome/>
-
+      <HomeAbout/>
+      <HomePortfolio/>
     </Wrapper>
   )
 };
