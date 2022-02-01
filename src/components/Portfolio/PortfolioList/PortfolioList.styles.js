@@ -96,6 +96,7 @@ export const StyledList = styled.ul`
     &__date {
       position: absolute;
       left: 20px;
+      color: ${({ theme }) => theme.colors.white};
     }
 
     &__name {
