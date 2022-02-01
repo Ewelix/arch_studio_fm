@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 import SectionTitle from '../SectionTitle/SectionTitle';
 import FormField from '../FormField/FormField';
+import { Wrapper } from './Form.styles';
+
+const initialFormState = {
+  name: '',
+  email: '',
+  message: '',
+}
 
 const Form = () => {
-  const [formValues, setFormValues] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
+  const [formValues, setFormValues] = useState(initialFormState);
 
   const { name, email, message } = formValues;
 
@@ -18,10 +21,16 @@ const Form = () => {
     });
   };
 
+  const handleSubmitForm = (e) => {
+    e.preventDefault();
+
+    setFormValues(initialFormState);
+  }
+
   return (
     <>
       <SectionTitle title="Connect with us" />
-      <form>
+      <Wrapper as="form" onSubmit={handleSubmitForm}>
         <FormField
           label="Name"
           id="name"
@@ -44,7 +53,7 @@ const Form = () => {
           value={message}
           onChange={handleInputChange}
         />
-      </form>
+      </Wrapper>
     </>
   );
 };
