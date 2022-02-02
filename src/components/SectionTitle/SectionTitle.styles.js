@@ -7,4 +7,6 @@ export const StyledSectionTitle = styled.h3`
   @media(${({theme}) => theme.device.m}) {
     font-size: ${({theme}) => theme.fontSize.l};
   }
+
+  white-space: pre-line;
 `

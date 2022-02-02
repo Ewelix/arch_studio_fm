@@ -9,7 +9,7 @@ const LeadersList = () => {
 
   return (
     <StyledLeadersList>
-      <SectionTitle title="The Leaders"/>
+      <SectionTitle title={`The \n Leaders`} />
         <SectionWrapper>
         {leadersList.map(({ name, position }, i) => {
           return (

@@ -16,7 +16,7 @@ const About = () => {
       <div>
         <SectionWrapper>
           <SectionContainer>
-            <SectionTitle title="Our Heritage" />
+            <SectionTitle title={`Our \n Heritage`} />
             <p>
               Founded in 2007, we started as a trio of architects. Our
               complimentary skills and relentless attention to detail turned Arch

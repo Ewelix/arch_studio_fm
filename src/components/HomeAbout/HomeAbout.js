@@ -8,7 +8,7 @@ const HomeAbout = () => {
     <Wrapper>
       <SectionContainer>
         <SectionContent>
-          <SectionTitle title="Small team, big ideas" />
+          <SectionTitle title={`Small team, \n big ideas`} />
           <LinkButton text="About Us" to="/about"/>
         </SectionContent>
       </SectionContainer>

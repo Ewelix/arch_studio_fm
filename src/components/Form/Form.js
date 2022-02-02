@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import SectionTitle from '../SectionTitle/SectionTitle';
 import FormField from '../FormField/FormField';
-import { Wrapper } from './Form.styles';
+import { Wrapper, FormWrapper } from './Form.styles';
 
 const initialFormState = {
   name: '',
@@ -28,9 +28,9 @@ const Form = () => {
   }
 
   return (
-    <>
-      <SectionTitle title="Connect with us" />
-      <Wrapper as="form" onSubmit={handleSubmitForm}>
+    <Wrapper>
+      <SectionTitle title={`Connect \n with us`} />
+      <FormWrapper as="form" onSubmit={handleSubmitForm}>
         <FormField
           label="Name"
           id="name"
@@ -53,8 +53,8 @@ const Form = () => {
           value={message}
           onChange={handleInputChange}
         />
-      </Wrapper>
-    </>
+      </FormWrapper>
+    </Wrapper>
   );
 };
 

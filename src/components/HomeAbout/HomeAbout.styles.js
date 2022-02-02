@@ -6,7 +6,7 @@ import imgL from '../../assets/desktop/image-small-team.jpg';
 export const Wrapper = styled.div`
   position: relative;
   width: 100%;
-  min-height: 450px;
+  height: 560px;
   background-image: url(${imgS});
   background-repeat: no-repeat;
   background-size: cover;
@@ -35,6 +35,7 @@ export const SectionContainer = styled.div`
   }
   
   h3 {
+    margin-top: 0;
     color: ${({theme}) => theme.colors.white};
   }
 `;
@@ -42,6 +43,5 @@ export const SectionContainer = styled.div`
 export const SectionContent = styled.div`
   position: absolute;
   z-index: 2;
-  top: 25%;
-  max-width: 250px; 
+  top: calc((560px - 310px) / 2);
 `;

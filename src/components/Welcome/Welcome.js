@@ -6,11 +6,12 @@ import img from '../../assets/desktop/image-welcome.jpg';
 import { SectionContainer } from '../AboutTab/About/About.styles';
 
 const Welcome = () => {
+
   return (
     <Wrapper>
       <PageTitle title="Welcome"/>
       <SectionContainer>
-        <SectionTitle title="Welcome to Arch Studio" />
+        <SectionTitle title={`Welcome to \n Arch Studio`} />
         <p>
           We have a unique network and skillset to help bring your projects to
           life. Our small team of highly skilled individuals combined with our

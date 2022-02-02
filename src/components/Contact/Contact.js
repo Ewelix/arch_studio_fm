@@ -20,7 +20,7 @@ const Contact = () => {
     <Wrapper>
       <IntroSection {...contact} type="contact" />
       <SectionWrapper>
-        <SectionTitle title="Contact Details" />
+        <SectionTitle title={`Contact \n Details`} />
         <ContactList />
         <img
           className="map-img"
