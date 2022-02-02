@@ -8,8 +8,8 @@ import { SectionContainer } from '../AboutTab/About/About.styles';
 const Welcome = () => {
   return (
     <Wrapper>
+      <PageTitle title="Welcome"/>
       <SectionContainer>
-        <PageTitle title="Welcome"/>
         <SectionTitle title="Welcome to Arch Studio" />
         <p>
           We have a unique network and skillset to help bring your projects to
@@ -30,6 +30,7 @@ const Welcome = () => {
       </SectionContainer>
       {/* if desktop */}
       <img
+        className="welcome-img"
         src={img}
         alt=""
       />

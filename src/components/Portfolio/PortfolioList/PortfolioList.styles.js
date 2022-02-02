@@ -59,21 +59,32 @@ export const StyledList = styled.ul`
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    padding: 0;
+  }
+
+  @media (${({ theme }) => theme.device.l}) {
+    justify-content: space-between;
   }
 
   .project {
     position: relative;
     width: 100%;
+    min-width: 300px;
     height: 14rem;
     margin-top: 20px;
     color: ${({ theme }) => theme.colors.white};
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 1;
+    
 
     @media (${({ theme }) => theme.device.l}) {
-      max-width: 350px;
+      width: calc((992px / 3) - 20px);
       height: 560px;
+    }
+
+    @media (${({ theme }) => theme.device.xl}) {
+      min-width: 350px;
     }
 
     &::after {

@@ -22,7 +22,7 @@ export const SectionWrapper = styled.section`
 `;
 
 export const SectionContainer = styled.div`
-  @media(${({theme}) => theme.device.xl}) {
+  @media(${({theme}) => theme.device.l}) {
     max-width: 440px;
   }
 `

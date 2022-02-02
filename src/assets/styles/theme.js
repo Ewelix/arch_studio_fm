@@ -2,7 +2,7 @@ export const size = {
   width: {
     // xxs: 360,
     xs: 420,
-    s: 520,
+    s: 575,
     m: 768,
     l: 1024,
     xl: 1200,
@@ -42,6 +42,7 @@ export const theme = {
     m: `min-width: ${size.width.m}px`,
     l: `min-width: ${size.width.l}px`,
     xl: `min-width: ${size.width.xl}px`,
-  }
+  },
+  sectionMargin: '8%',
 }
 

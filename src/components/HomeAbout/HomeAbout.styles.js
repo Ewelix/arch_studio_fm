@@ -13,6 +13,7 @@ export const Wrapper = styled.div`
 
   @media(${({theme}) => theme.device.m}) {
     background-image: url(${imgM});
+    margin-bottom: ${({theme}) => theme.sectionMargin};
   }
 
   @media(${({theme}) => theme.device.xl}) {
