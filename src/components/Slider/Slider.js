@@ -1,10 +1,10 @@
 import React from 'react';
+import SimpleSlider from '../SimpleSlider/SimpleSlider';
+
 
 const Slider = () => {
   return (
-    <div>
-      
-    </div>
+    <SimpleSlider/>
   );
 };
 

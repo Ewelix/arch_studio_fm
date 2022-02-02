@@ -43,5 +43,10 @@ export const SectionContainer = styled.div`
 export const SectionContent = styled.div`
   position: absolute;
   z-index: 2;
-  top: calc((560px - 310px) / 2);
+  top: calc((560px - 250px) / 2);
+  left: 10%;
+  
+  @media(${({theme}) => theme.device.xl}) {
+    left: 17.5%;
+  }
 `;

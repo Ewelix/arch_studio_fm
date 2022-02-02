@@ -8,20 +8,20 @@ export const SectionWrapper = styled.div`
     flex-wrap: wrap;
     justify-content: space-between;
     
-    h3 {
-      margin: 0;
-    }
-    
     .map-img {
       flex-basis: 100%;
       margin: 7% auto 0;
-      
     }
   }
 
   h3 {
-    @media(${({theme}) => theme.device.m}) and (max-width: 1023px) {
+    @media(${({theme}) => theme.device.m}) {
       white-space: unset;
+    }
+
+    @media(${({theme}) => theme.device.l}) {
+      margin: 0;
+      white-space: pre-line;
     }
   }
 `
