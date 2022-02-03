@@ -1,8 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
+import './font.scss';
 
 export const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;700&display=swap');
-  
   html {
     box-sizing: border-box;
   }

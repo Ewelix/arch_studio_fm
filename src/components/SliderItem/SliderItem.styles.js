@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
     content: '';
     top: 0;
     left: 0;
-    width: 50%;
+    width: 100%;
     height: 100%;
     right: 0;
     bottom: 0;
@@ -17,9 +17,8 @@ export const Wrapper = styled.div`
 
 export const SectionContent = styled.div`
   position: absolute;
-  top: calc((700px - 320px) / 2);
+  top: calc((700px - 350px) / 2);
   z-index: 4;
-  max-width: 400px;
   margin-left: 1.5%;
   color: ${({ theme }) => theme.colors.white};
 
@@ -31,6 +30,7 @@ export const SectionContent = styled.div`
   }
 
   p {
+    max-width: 445px;
     color: ${({ theme }) => theme.colors.white};
   }
 `;

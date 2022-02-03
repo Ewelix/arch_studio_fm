@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 30px 0;
+    padding: 0;
     margin-bottom: ${({theme}) => theme.sectionMargin};
   }
 
@@ -17,7 +17,7 @@ export const Wrapper = styled.div`
     @media(${({theme}) => theme.device.l}) {
       z-index: 1;
       flex-basis: 100%;
-      margin-bottom: -100px;
+      margin-bottom: -120px;
       padding-left: 50px;
     }
   }
