@@ -1,32 +1,32 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-// import { Wrapper } from '../../Root/Root.styles';
-import { Wrapper, StyledNav, StyledLink } from './Nav.styles';
-import logo from './../../assets/icons/logo.svg';
-import hamburgerIcon from './../../assets/icons/icon-hamburger.svg';
+import {
+  Wrapper,
+  Navigation,
+  StyledLink,
+  MenuToggleButton,
+  Logo,
+} from './Nav.styles';
+import { ReactComponent as LogoIcon } from './../../assets/icons/logo.svg';
+import { ReactComponent as HamburgerIcon } from './../../assets/icons/icon-hamburger.svg';
+import { ReactComponent as CloseIcon } from './../../assets/icons/icon-close.svg';
 
 const Nav = () => {
-  const [responsive, setResponsive] = useState(false);
-
-  const toggleResponsive = () => {
-    setResponsive((prev) => !prev);
-  };
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <Wrapper>
-      <Link to="/" className="logo">
-        <img src={logo} alt="Arch logo" />
-      </Link>
-      <a className="nav__icon" onClick={toggleResponsive}>
-        <img src={hamburgerIcon} alt="Hamburger icon" />
-      </a>
-      <StyledNav>
-        <div className={responsive ? 'nav responsive' : 'nav'}>
-          <StyledLink to="/portfolio">Portfolio</StyledLink>
-          <StyledLink to="/about">About Us</StyledLink>
-          <StyledLink to="/contact">Contact</StyledLink>
-        </div>
-      </StyledNav>
+    <Wrapper isOpen={isOpen}>
+      <Logo to="/">
+        <LogoIcon />
+      </Logo>
+      <MenuToggleButton onClick={() => setIsOpen((prev) => !prev)}>
+        {isOpen ? <CloseIcon /> : <HamburgerIcon />}
+      </MenuToggleButton>
+
+      <Navigation isOpen={isOpen}>
+        <StyledLink to="/portfolio">Portfolio</StyledLink>
+        <StyledLink to="/about">About Us</StyledLink>
+        <StyledLink to="/contact">Contact</StyledLink>
+      </Navigation>
     </Wrapper>
   );
 };
