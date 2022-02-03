@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
+  position: relative;
+  
   .slick-dots li  {
     display: inline-flex;
     flex-direction: row;
