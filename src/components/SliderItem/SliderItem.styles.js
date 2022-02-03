@@ -21,16 +21,16 @@ export const SectionContent = styled.div`
   z-index: 4;
   max-width: 400px;
   margin-left: 1.5%;
-  color: ${({theme}) => theme.colors.white};
-  
+  color: ${({ theme }) => theme.colors.white};
+
   h2 {
     margin: 20px 0;
-    font-size: ${({theme}) => theme.fontSize.xl};
-    line-height: ${({theme}) => theme.fontSize.xl};
+    font-size: ${({ theme }) => theme.fontSize.xl};
+    line-height: ${({ theme }) => theme.fontSize.xl};
     white-space: pre-line;
   }
-  
+
   p {
-    color: ${({theme}) => theme.colors.white};
+    color: ${({ theme }) => theme.colors.white};
   }
 `;

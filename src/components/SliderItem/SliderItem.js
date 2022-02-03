@@ -19,7 +19,7 @@ const SliderItem = ({ sliderItem: { id, title, description } }) => {
       <SectionContent>
         <h2>{title}</h2>
         <p>{description}</p>
-        <LinkButton text="See Our Portfolio" to="/portfolio"/>
+        <LinkButton text="See Our Portfolio" to="/portfolio" />
       </SectionContent>
     </Wrapper>
   );
