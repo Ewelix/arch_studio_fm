@@ -49,13 +49,11 @@ export const Navigation = styled.nav`
   padding: 30px 20px;
   background: ${({ theme }) => theme.colors.lightGray};
   animation: 0.3s 1 forwards ${ShowAnimation};
-`;
-
-export const StyledLink = styled(Link)`
-  display: block;
-  padding: 15px 30px;
-  color: ${({ theme }) => theme.colors.black};
-  font-size: ${({ theme }) => theme.fontSize.xs};
-  font-weight: ${({ theme }) => theme.fontWeight.bold};
-  text-decoration: none;
+  
+  a {
+    display: block;
+    padding: 15px 30px;
+    color: ${({ theme }) => theme.colors.black};
+    font-size: ${({ theme }) => theme.fontSize.xs};
+  }
 `;
