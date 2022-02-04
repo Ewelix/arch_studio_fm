@@ -21,6 +21,7 @@ export const StyledMenu = styled.div`
         height: 1px;
         margin: 10px auto 0;
         background: ${({ theme }) => theme.colors.white};
+        transition: background 0.3s ease-in-out;
       }
 
       &.active-link {

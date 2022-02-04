@@ -1,14 +1,17 @@
 import React from 'react';
 import Nav from '../Nav/Nav';
 import Menu from '../Menu/Menu';
-import { ReactComponent as LogoIcon } from '../../assets/icons/logo.svg';
-import { Logo } from '../Nav/Nav.styles';
+import useCheckMobileScreen from '../../hooks/useCheckMobileScreen';
+import Logo from '../Logo/Logo';
 
 const MainTemplate = ({ children }) => {
+  const checkMobileScreen = useCheckMobileScreen();
   return (
     <>
-      {/*<Nav />*/}
-      <Menu/>
+      <div>
+        <Logo to='/'/>
+        {checkMobileScreen ? <Nav /> : <Menu/>}
+      </div>
       {children}
     </>
   );
