@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: ${({theme}) => theme.sectionMargin};
+    margin-bottom: ${({ theme }) => theme.sectionMargin};
   }
 
   h3 {
@@ -22,6 +22,38 @@ export const Wrapper = styled.div`
     @media (${({ theme }) => theme.device.s}) {
       flex-basis: 50%;
       padding: 0;
+    }
+  }
+
+  .project {
+    @media (${({ theme }) => theme.device.s}) {
+      &::before {
+        position: absolute;
+        z-index: 5;
+        right: 15px;
+        font-size: ${({ theme }) => theme.fontSize.xxxl};
+        font-weight: ${({ theme }) => theme.fontWeight.bold};
+        opacity: 0.5;
+      }
+
+      &:first-child::before {
+        content: '1';
+      }
+
+      &:nth-child(2)::before {
+        content: '2';
+      }
+
+      &:last-child::before {
+        content: '3';
+      }
+    }
+
+    @media (${({ theme }) => theme.device.s}) {
+      &::before {
+        right: -15px;
+      }
+    }
     }
   }
 
