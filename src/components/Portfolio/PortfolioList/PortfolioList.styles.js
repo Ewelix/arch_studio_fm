@@ -81,6 +81,7 @@ export const StyledList = styled.ul`
     @media (${({ theme }) => theme.device.l}) {
       width: calc((992px / 3) - 20px);
       height: 560px;
+      margin-top: 0;
     }
 
     @media (${({ theme }) => theme.device.xl}) {

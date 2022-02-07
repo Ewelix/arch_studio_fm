@@ -6,9 +6,10 @@ export const StyledMenu = styled.div`
   align-items: center;
   justify-content: space-between;
   max-width: 500px;
+  padding: 4% 0 3%;
 
   a {
-    padding: 15px 20px 5px;
+    padding: 15px 20px 5px 0;
     color: ${({ theme }) => theme.colors.mediumGray};
     font-size: ${({ theme }) => theme.fontSize.xxs};
     text-align: center;
@@ -34,6 +35,10 @@ export const StyledMenu = styled.div`
       &:hover {
         color: ${({ theme }) => theme.colors.black};
       }
+    }
+    
+    &:first-child {
+      padding-right: 60px;
     }
   }
 `;
