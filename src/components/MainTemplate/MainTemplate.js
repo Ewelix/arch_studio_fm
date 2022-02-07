@@ -4,6 +4,7 @@ import Nav from '../Nav/Nav';
 import Menu from '../Menu/Menu';
 import useCheckMobileScreen from '../../hooks/useCheckMobileScreen';
 import Footer from '../Footer/Footer';
+import NavSticker from '../NavSticker/NavSticker';
 
 const Wrapper = styled.div`
   @media(${({theme}) => theme.device.xl}) {
@@ -17,7 +18,12 @@ const MainTemplate = ({ children }) => {
   return (
     <Wrapper>
       <div>
-        {checkMobileScreen ? <Nav /> : <Menu/>}
+        {checkMobileScreen ? <Nav /> : (
+          <>
+            <NavSticker/>
+            <Menu/>
+          </>
+        )}
       </div>
       {children}
       <Footer/>

@@ -26,6 +26,10 @@ export const Wrapper = styled.div`
     padding: 15px 0;
     color: ${({ theme }) => theme.colors.mediumGray};
     font-size: ${({ theme }) => theme.fontSize.xxs};
+    
+    &:hover {
+      color: ${({ theme }) => theme.colors.black};
+    }
   }
   
   ${StyledButton} {
