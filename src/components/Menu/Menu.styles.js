@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledMenu = styled.div`
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: center;

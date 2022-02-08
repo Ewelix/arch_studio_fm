@@ -1,17 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
 import Nav from '../Nav/Nav';
 import Menu from '../Menu/Menu';
 import useCheckMobileScreen from '../../hooks/useCheckMobileScreen';
 import Footer from '../Footer/Footer';
 import NavSticker from '../NavSticker/NavSticker';
-
-const Wrapper = styled.div`
-  @media(${({theme}) => theme.device.xl}) {
-    max-width: 1100px;
-    margin: 0 auto;
-  }
-`
+import { Wrapper } from './MainTemplate.styles';
 
 const MainTemplate = ({ children }) => {
   const checkMobileScreen = useCheckMobileScreen();
@@ -20,7 +13,7 @@ const MainTemplate = ({ children }) => {
       <div>
         {checkMobileScreen ? <Nav /> : (
           <>
-            <NavSticker/>
+            {/*<NavSticker/>*/}
             <Menu/>
           </>
         )}

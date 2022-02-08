@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   @media(${({theme}) => theme.device.m}) {
+    position: relative;
     padding-bottom: 15%;
   }
 
@@ -30,7 +31,7 @@ export const ImageWrapper = styled.div`
 
     @media(${({theme}) => theme.device.m}) {
       width: 100%;
-      max-width: unset;
+      max-width: 635px;
     }
   }
 `;
@@ -61,7 +62,7 @@ export const SectionWrapper = styled.div`
     align-self: end;
     margin-top: 0;
     margin-left: -180px;
-    padding-top: 150px;
+    padding-top: 60px;
     padding-left: 12%;
   }
 

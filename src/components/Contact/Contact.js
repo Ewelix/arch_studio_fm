@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wrapper } from '../../Root/Root.styles';
+import { Wrapper } from '../MainTemplate/MainTemplate.styles';
 import IntroSection from '../IntroSection/IntroSection';
 import { pageTextContent } from '../../data/pageTextContent';
 import SectionTitle from '../SectionTitle/SectionTitle';

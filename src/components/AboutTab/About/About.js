@@ -3,7 +3,7 @@ import { pageTextContent } from '../../../data/pageTextContent';
 import LeadersList from '../LeadersList/LeadersList';
 import SectionTitle from '../../SectionTitle/SectionTitle';
 import { SectionWrapper, SectionContainer } from './About.styles';
-import { Wrapper } from '../../../Root/Root.styles';
+import { Wrapper } from '../../MainTemplate/MainTemplate.styles';
 import heritageImg from './../../../assets/desktop/image-heritage.jpg';
 
 import IntroSection from '../../IntroSection/IntroSection';

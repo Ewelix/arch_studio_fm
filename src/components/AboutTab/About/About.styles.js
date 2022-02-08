@@ -7,7 +7,7 @@ export const SectionWrapper = styled.section`
     padding: 0 0 15% 0;
   }
   
-  @media(${({theme}) => theme.device.xl}) {
+  @media(${({theme}) => theme.device.l}) {
     display: flex;
     justify-content: space-between;
   }
@@ -15,7 +15,7 @@ export const SectionWrapper = styled.section`
   .heritage-img {
     display: none;
 
-    @media(${({theme}) => theme.device.xl}) {
+    @media(${({theme}) => theme.device.l}) {
       display: block;
     }
   }
