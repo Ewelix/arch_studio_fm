@@ -17,6 +17,7 @@ export const SectionWrapper = styled.section`
 
     @media(${({theme}) => theme.device.l}) {
       display: block;
+      max-width: 45%;
     }
   }
 `;

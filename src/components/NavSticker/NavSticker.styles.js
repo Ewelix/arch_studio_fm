@@ -7,7 +7,11 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 40px;
-  transform: translateY(-100%) translateX(-65%) rotate(90deg);
+  transform: translateY(-100%) translateX(-58%) rotate(90deg);
+  
+  @media(${({theme}) => theme.device.xxl}) {
+    transform: translateY(-100%) translateX(-65%) rotate(90deg);
+  }
   
   span {
     width: 220px;

@@ -17,6 +17,10 @@ export const Wrapper = styled.div`
   min-height: 70px;
   padding: 0 10px;
   position: relative;
+  
+  @media(${({theme}) => theme.device.s}) {
+    padding: 4% 0 3%;
+  }
 
   &::before {
     display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};

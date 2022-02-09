@@ -42,6 +42,7 @@ export const theme = {
     m: `min-width: ${size.width.m}px`,
     l: `min-width: ${size.width.l}px`,
     xl: `min-width: ${size.width.xl}px`,
+    xxl: `min-width: ${size.width.xxl}px`,
   },
   sectionMargin: '8%',
 }

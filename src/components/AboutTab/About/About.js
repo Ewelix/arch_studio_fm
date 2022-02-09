@@ -37,9 +37,7 @@ const About = () => {
           <img className="heritage-img" src={heritageImg} alt=""/>
         </SectionWrapper>
       </div>
-      <SectionWrapper>
-        <LeadersList />
-      </SectionWrapper>
+      <LeadersList />
     </Wrapper>
   );
 };

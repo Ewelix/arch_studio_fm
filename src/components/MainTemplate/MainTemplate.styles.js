@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   overflow: hidden;
 
   @media(${({theme}) => theme.device.m}) {
-    max-width: 575px;
+    max-width: 700px;
     overflow: visible;
     position: relative;
   }

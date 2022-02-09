@@ -59,6 +59,7 @@ export const LogoWrapper = styled.div`
   @media(${({theme}) => theme.device.xl}) {
     width: 200px;
     height: 200px;
+    margin-bottom: -1px;
   }
 
   svg {

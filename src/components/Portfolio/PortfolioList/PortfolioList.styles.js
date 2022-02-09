@@ -68,18 +68,20 @@ export const StyledList = styled.ul`
 
   .project {
     position: relative;
-    width: 100%;
-    min-width: 300px;
     height: 14rem;
     margin-top: 20px;
     color: ${({ theme }) => theme.colors.white};
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 1;
-    
+
+    @media (${({ theme }) => theme.device.m}) {
+      width: 100%;
+    }
 
     @media (${({ theme }) => theme.device.l}) {
-      width: calc((992px / 3) - 20px);
+      width: unset;
+      min-width: calc((900px / 3) - 20px);
       height: 560px;
       margin-top: 0;
     }

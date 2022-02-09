@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
   @media(${({theme}) => theme.device.m}) {
     position: relative;
-    padding-bottom: 15%;
+    margin-bottom: 15%;
   }
 
   @media(${({theme}) => theme.device.xl}) {
@@ -30,8 +30,8 @@ export const ImageWrapper = styled.div`
     display: block;
 
     @media(${({theme}) => theme.device.m}) {
-      width: 100%;
       max-width: 635px;
+      margin: 0 auto;
     }
   }
 `;
@@ -46,19 +46,21 @@ export const SectionWrapper = styled.div`
 
   @media(${({theme}) => theme.device.m}) {
     position: absolute;
-    top: 35%;
+    right: 30px;
+    bottom: -1px;
     width: 515px;
-    margin-left: 60px;
-    padding-top: 50px;
-    padding-left: 8%;
+    padding: 50px 0 0 50px;
+  }
 
-    p {
-      max-width: 430px;
-    }
+  @media(${({theme}) => theme.device.l}) {
+    right: 13%;
   }
 
   @media(${({theme}) => theme.device.xl}) {
     position: relative;
+    right: 0;
+    flex-grow: 1;
+    width: 600px;
     align-self: end;
     margin-top: 0;
     margin-left: -180px;
@@ -74,12 +76,13 @@ export const SectionWrapper = styled.div`
     }
 
     @media(${({theme}) => theme.device.xl}) {
-      top: -25%;
+      top: -31%;
       left: -4%;
     }
   }
 
   p {
+    margin: 0;
     color: ${({theme}) => theme.colors.darkGray};
     font-size: ${({theme}) => theme.fontSize.xxs};
     font-weight: ${({theme}) => theme.fontWeight.medium};
