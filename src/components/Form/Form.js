@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import SectionTitle from '../SectionTitle/SectionTitle';
 import FormField from '../FormField/FormField';
 import { Wrapper, FormWrapper } from './Form.styles';
+import LinkButton from '../LinkButton/LinkButton';
 
 const initialFormState = {
   name: '',
@@ -53,6 +54,7 @@ const Form = () => {
           value={message}
           onChange={handleInputChange}
         />
+        <LinkButton as="button"/>
       </FormWrapper>
     </Wrapper>
   );

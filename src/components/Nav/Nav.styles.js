@@ -26,7 +26,7 @@ export const Wrapper = styled.div`
     display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
     position: absolute;
     content: '';
-    z-index: 3;
+    z-index: 5;
     top: 70px;
     left: 0;
     width: 100vw;

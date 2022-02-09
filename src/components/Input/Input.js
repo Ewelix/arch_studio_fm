@@ -1,5 +1,5 @@
 import styled from 'styled-components';
 
 export const Input = styled.input`
-  padding: 5px 8px 20px;
+  padding: 5px 8px 20px 20px;
 `;

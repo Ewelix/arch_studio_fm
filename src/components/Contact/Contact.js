@@ -22,14 +22,14 @@ const Contact = () => {
       <SectionWrapper>
         <SectionTitle title={`Contact \n Details`} />
         <ContactList />
-        <img
-          className="map-img"
-          src={mapImgS}
-          srcSet={`${mapImgS} 300w, ${mapImgM} 768w, ${mapImgL} 1100w`}
-          alt=""
-        />
       </SectionWrapper>
-      <Form/>
+      <img
+        className="map-img"
+        src={mapImgS}
+        srcSet={`${mapImgS} 300w, ${mapImgM} 768w, ${mapImgL} 1100w`}
+        alt=""
+      />
+      <Form />
     </Wrapper>
   );
 };

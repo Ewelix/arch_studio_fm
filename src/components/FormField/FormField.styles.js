@@ -8,9 +8,8 @@ export const Wrapper = styled.div`
 
   ${Input},
   ${Textarea} {
-    margin-bottom: 15px;
     border: none;
-    border-bottom: 2px solid ${({ theme }) => theme.colors.border};
+    border-bottom: 1px solid ${({ theme }) => theme.colors.black};
 
     &:focus {
       outline: none;
@@ -21,5 +20,9 @@ export const Wrapper = styled.div`
       font-weight: ${({ theme }) => theme.fontWeight.bold};
       color: ${({ theme }) => theme.colors.bluishGray};
     }
+  }
+
+  ${Input} {
+    margin-bottom: 15px;
   }
 `;

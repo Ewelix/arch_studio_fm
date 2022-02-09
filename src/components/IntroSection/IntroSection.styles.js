@@ -77,7 +77,7 @@ export const SectionWrapper = styled.div`
 
     @media(${({theme}) => theme.device.xl}) {
       top: -31%;
-      left: -4%;
+      right: 0;
     }
   }
 

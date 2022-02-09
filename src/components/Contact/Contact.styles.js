@@ -2,16 +2,18 @@ import styled from 'styled-components';
 
 export const SectionWrapper = styled.div`
   padding: 5px 20px;
+  margin-bottom: ${({theme}) => theme.sectionMargin};
 
   @media(${({theme}) => theme.device.l}) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
-    .map-img {
-      flex-basis: 100%;
-      margin: 7% auto 0;
-    }
+    padding: 0;
+  }
+
+  & + .map-img {
+    flex-basis: 100%;
+    margin: 7% auto ${({theme}) => theme.sectionMargin};
   }
 
   h3 {

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const StyledTitle = styled.h2`
   display: none;
 
-  @media(${({theme}) => theme.device.s}) {
+  @media(${({theme}) => theme.device.m}) {
     display: block;
     margin: 0;
     color: ${({theme}) => theme.colors.lightGray};
