@@ -12,7 +12,7 @@ const images = importAll(require.context('../../../assets/avatars', false, /\.(p
 const LeadersListItem = ({name, position, i}) => {
   return (
     <StyledListItem>
-      <ImageContainer className="hi">
+      <ImageContainer>
         <img src={images[i]} alt='Leader portrait' />
       </ImageContainer>
       <StyledItemTitle>{name}</StyledItemTitle>

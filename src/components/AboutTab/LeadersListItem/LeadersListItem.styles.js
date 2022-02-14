@@ -42,11 +42,12 @@ export const StyledListItem = styled.div`
 `;
 
 export const StyledItemTitle = styled.p`
+  color: ${({ theme }) => theme.colors.black};
   font-weight: ${({ theme }) => theme.fontWeight.bold};
-  font-size: ${({ theme }) => theme.fontSize.s};
+  font-size: ${({ theme }) => theme.fontSize.xs};
 `;
 
 export const StyledItemSubtitle = styled.p`
-  font-size: ${({ theme }) => theme.fontSize.xs};
+  font-size: ${({ theme }) => theme.fontSize.xxs};
   color: ${({ theme }) => theme.colors.darkGray};
 `;
