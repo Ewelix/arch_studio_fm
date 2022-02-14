@@ -1,6 +1,7 @@
 import React from 'react';
-import { StyledListItem, StyledItemTitle, StyledItemSubtitle} from './LeadersListItem.styles';
+import { StyledListItem, StyledItemTitle, StyledItemSubtitle, ImageContainer} from './LeadersListItem.styles';
 import SocialMediaLinks from '../SocialMediaLinks/SocialMediaLinks';
+import { ImageWrapper } from '../../IntroSection/IntroSection.styles';
 
 function importAll(r) {
   return r.keys().map(r);
@@ -11,7 +12,9 @@ const images = importAll(require.context('../../../assets/avatars', false, /\.(p
 const LeadersListItem = ({name, position, i}) => {
   return (
     <StyledListItem>
-      <img src={images[i]} alt='Leader portrait' />
+      <ImageContainer className="hi">
+        <img src={images[i]} alt='Leader portrait' />
+      </ImageContainer>
       <StyledItemTitle>{name}</StyledItemTitle>
       <StyledItemSubtitle>{position}</StyledItemSubtitle>
       <SocialMediaLinks/>

@@ -1,28 +1,35 @@
 import styled from 'styled-components';
 
 export const StyledLeadersList = styled.div`
-  @media(${({theme}) => theme.device.xl}) {
+  padding: 0 20px;
+
+  @media(${({theme}) => theme.device.m}) {
+    padding: 0;
+  }
+  
+  @media(${({theme}) => theme.device.l}) {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    width: 100%;
-    
-    h3 {
-      flex-basis: 50%;
+  }
+
+  h3 {
+    min-width: 270px;
+
+    @media(${({theme}) => theme.device.m}) {
+      margin-top: 0;
     }
   }
 `;
 
 export const SectionWrapper = styled.div`
-  @media(${({theme}) => theme.device.m}) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 800px;
-  }
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 700px;
 
-  @media(${({theme}) => theme.device.xl}) {
-    justify-content: end;
+  @media(${({theme}) => theme.device.s}) {
+    justify-content: space-around;
     gap: 20px;
-    max-width: 730px;
   }
 `;

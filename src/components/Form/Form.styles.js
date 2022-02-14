@@ -30,7 +30,7 @@ export const Wrapper = styled.div`
   }
   
   h3 {
-    @media (${({ theme }) => theme.device.s}) and (max-width: 1023px) {
+    @media (${({ theme }) => theme.device.s}) and (max-width: 677px) {
       white-space: unset;
     }
   }
