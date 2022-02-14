@@ -3,7 +3,7 @@ import SectionTitle from '../SectionTitle/SectionTitle';
 import { Wrapper } from './Welcome.styles';
 import PageTitle from '../PageTitle/PageTitle';
 import img from '../../assets/desktop/image-welcome.jpg';
-import { SectionContainer } from '../AboutTab/About/About.styles';
+import { SectionContainer } from '../../views/About/About.styles';
 
 const Welcome = () => {
 

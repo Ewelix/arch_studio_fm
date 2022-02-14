@@ -1,6 +1,6 @@
 import React from 'react';
-import PortfolioList from './PortfolioList/PortfolioList';
-import { Wrapper } from '../MainTemplate/MainTemplate.styles';
+import PortfolioList from '../../components/PortfolioList/PortfolioList';
+import { Wrapper } from '../../components/MainTemplate/MainTemplate.styles';
 
 const Portfolio = () => {
   return (

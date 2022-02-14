@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { StyledButton } from '../LinkButton/LinkButton.styles';
-import { StyledList } from '../Portfolio/PortfolioList/PortfolioList.styles';
+import { StyledList } from '../PortfolioList/PortfolioList.styles';
 
 export const Wrapper = styled.div`
   display: flex;

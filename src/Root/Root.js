@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Home from '../components/Home/Home';
-import About from '../components/AboutTab/About/About';
-import Portfolio from '../components/Portfolio/Portfolio';
-import Contact from '../components/Contact/Contact';
+import Home from '../views/Home/Home';
+import About from '../views/About/About';
+import Portfolio from '../views/Portfolio/Portfolio';
+import Contact from '../views/Contact/Contact';
 import '../App.css';
 import { GlobalStyle } from '../assets/styles/globalStyle';
 import { ThemeProvider } from 'styled-components';

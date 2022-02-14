@@ -1,15 +1,15 @@
 import React from 'react';
-import { Wrapper } from '../MainTemplate/MainTemplate.styles';
-import IntroSection from '../IntroSection/IntroSection';
+import { Wrapper } from '../../components/MainTemplate/MainTemplate.styles';
+import IntroSection from '../../components/IntroSection/IntroSection';
 import { pageTextContent } from '../../data/pageTextContent';
-import SectionTitle from '../SectionTitle/SectionTitle';
+import SectionTitle from '../../components/SectionTitle/SectionTitle';
 import { SectionWrapper } from './Contact.styles';
-import ContactList from '../ContactList/ContactList';
-import Form from '../Form/Form';
+import ContactList from '../../components/ContactList/ContactList';
+import Form from '../../components/Form/Form';
 
-import mapImgS from './../../assets/mobile/image-map.png';
-import mapImgM from './../../assets/tablet/image-map.png';
-import mapImgL from './../../assets/desktop/image-map.png';
+import mapImgS from '../../assets/mobile/image-map.png';
+import mapImgM from '../../assets/tablet/image-map.png';
+import mapImgL from '../../assets/desktop/image-map.png';
 
 const Contact = () => {
   const {

@@ -1,51 +1,51 @@
 import styled from 'styled-components';
-import project1S from '../../../assets/portfolio/mobile/image-seraph.jpg';
-import project1M from '../../../assets/portfolio/tablet/image-seraph.jpg';
-import project1L from '../../../assets/portfolio/desktop/image-seraph.jpg';
+import project1S from '../../assets/portfolio/mobile/image-seraph.jpg';
+import project1M from '../../assets/portfolio/tablet/image-seraph.jpg';
+import project1L from '../../assets/portfolio/desktop/image-seraph.jpg';
 
-import project2S from '../../../assets/portfolio/mobile/image-eebox.jpg';
-import project2M from '../../../assets/portfolio/tablet/image-eebox.jpg';
-import project2L from '../../../assets/portfolio/desktop/image-eebox.jpg';
+import project2S from '../../assets/portfolio/mobile/image-eebox.jpg';
+import project2M from '../../assets/portfolio/tablet/image-eebox.jpg';
+import project2L from '../../assets/portfolio/desktop/image-eebox.jpg';
 
-import project3S from '../../../assets/portfolio/mobile/image-federal.jpg';
-import project3M from '../../../assets/portfolio/tablet/image-federal.jpg';
-import project3L from '../../../assets/portfolio/desktop/image-federal.jpg';
+import project3S from '../../assets/portfolio/mobile/image-federal.jpg';
+import project3M from '../../assets/portfolio/tablet/image-federal.jpg';
+import project3L from '../../assets/portfolio/desktop/image-federal.jpg';
 
-import project4S from '../../../assets/portfolio/mobile/image-del-sol.jpg';
-import project4M from '../../../assets/portfolio/tablet/image-del-sol.jpg';
-import project4L from '../../../assets/portfolio/desktop/image-del-sol.jpg';
+import project4S from '../../assets/portfolio/mobile/image-del-sol.jpg';
+import project4M from '../../assets/portfolio/tablet/image-del-sol.jpg';
+import project4L from '../../assets/portfolio/desktop/image-del-sol.jpg';
 
-import project5S from '../../../assets/portfolio/mobile/image-prototype.jpg';
-import project5M from '../../../assets/portfolio/tablet/image-prototype.jpg';
-import project5L from '../../../assets/portfolio/desktop/image-prototype.jpg';
+import project5S from '../../assets/portfolio/mobile/image-prototype.jpg';
+import project5M from '../../assets/portfolio/tablet/image-prototype.jpg';
+import project5L from '../../assets/portfolio/desktop/image-prototype.jpg';
 
-import project6S from '../../../assets/portfolio/mobile/image-228b.jpg';
-import project6M from '../../../assets/portfolio/tablet/image-228b.jpg';
-import project6L from '../../../assets/portfolio/desktop/image-228b.jpg';
+import project6S from '../../assets/portfolio/mobile/image-228b.jpg';
+import project6M from '../../assets/portfolio/tablet/image-228b.jpg';
+import project6L from '../../assets/portfolio/desktop/image-228b.jpg';
 
-import project7S from '../../../assets/portfolio/mobile/image-edelweiss.jpg';
-import project7M from '../../../assets/portfolio/tablet/image-edelweiss.jpg';
-import project7L from '../../../assets/portfolio/desktop/image-edelweiss.jpg';
+import project7S from '../../assets/portfolio/mobile/image-edelweiss.jpg';
+import project7M from '../../assets/portfolio/tablet/image-edelweiss.jpg';
+import project7L from '../../assets/portfolio/desktop/image-edelweiss.jpg';
 
-import project8S from '../../../assets/portfolio/mobile/image-netcry.jpg';
-import project8M from '../../../assets/portfolio/tablet/image-netcry.jpg';
-import project8L from '../../../assets/portfolio/desktop/image-netcry.jpg';
+import project8S from '../../assets/portfolio/mobile/image-netcry.jpg';
+import project8M from '../../assets/portfolio/tablet/image-netcry.jpg';
+import project8L from '../../assets/portfolio/desktop/image-netcry.jpg';
 
-import project9S from '../../../assets/portfolio/mobile/image-hypers.jpg';
-import project9M from '../../../assets/portfolio/tablet/image-hypers.jpg';
-import project9L from '../../../assets/portfolio/desktop/image-hypers.jpg';
+import project9S from '../../assets/portfolio/mobile/image-hypers.jpg';
+import project9M from '../../assets/portfolio/tablet/image-hypers.jpg';
+import project9L from '../../assets/portfolio/desktop/image-hypers.jpg';
 
-import project10S from '../../../assets/portfolio/mobile/image-sxiv.jpg';
-import project10M from '../../../assets/portfolio/tablet/image-sxiv.jpg';
-import project10L from '../../../assets/portfolio/desktop/image-sxiv.jpg';
+import project10S from '../../assets/portfolio/mobile/image-sxiv.jpg';
+import project10M from '../../assets/portfolio/tablet/image-sxiv.jpg';
+import project10L from '../../assets/portfolio/desktop/image-sxiv.jpg';
 
-import project11S from '../../../assets/portfolio/mobile/image-trinity.jpg';
-import project11M from '../../../assets/portfolio/tablet/image-trinity.jpg';
-import project11L from '../../../assets/portfolio/desktop/image-trinity.jpg';
+import project11S from '../../assets/portfolio/mobile/image-trinity.jpg';
+import project11M from '../../assets/portfolio/tablet/image-trinity.jpg';
+import project11L from '../../assets/portfolio/desktop/image-trinity.jpg';
 
-import project12S from '../../../assets/portfolio/mobile/image-paramour.jpg';
-import project12M from '../../../assets/portfolio/tablet/image-paramour.jpg';
-import project12L from '../../../assets/portfolio/desktop/image-paramour.jpg';
+import project12S from '../../assets/portfolio/mobile/image-paramour.jpg';
+import project12M from '../../assets/portfolio/tablet/image-paramour.jpg';
+import project12L from '../../assets/portfolio/desktop/image-paramour.jpg';
 
 // przedrostek Styled dla generycznych elementow
 

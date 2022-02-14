@@ -1,12 +1,12 @@
 import React from 'react';
-import { pageTextContent } from '../../../data/pageTextContent';
-import LeadersList from '../LeadersList/LeadersList';
-import SectionTitle from '../../SectionTitle/SectionTitle';
+import { pageTextContent } from '../../data/pageTextContent';
+import LeadersList from '../../components/LeadersList/LeadersList';
+import SectionTitle from '../../components/SectionTitle/SectionTitle';
 import { SectionWrapper, SectionContainer } from './About.styles';
-import { Wrapper } from '../../MainTemplate/MainTemplate.styles';
-import heritageImg from './../../../assets/desktop/image-heritage.jpg';
+import { Wrapper } from '../../components/MainTemplate/MainTemplate.styles';
+import heritageImg from '../../assets/desktop/image-heritage.jpg';
 
-import IntroSection from '../../IntroSection/IntroSection';
+import IntroSection from '../../components/IntroSection/IntroSection';
 
 const About = () => {
   const { intro: { about } } = pageTextContent;

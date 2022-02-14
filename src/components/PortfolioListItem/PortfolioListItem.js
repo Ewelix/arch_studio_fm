@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { StyledButton } from '../../LinkButton/LinkButton.styles';
+import { StyledButton } from '../LinkButton/LinkButton.styles';
 
 const PortfolioListItem = ({ userData: { id, name, date } }) => {
   return (
