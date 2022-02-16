@@ -1,5 +1,7 @@
 import React from 'react';
+
 import Slider from 'react-slick';
+
 import { pageTextContent } from '../../data/pageTextContent';
 import SliderItem from '../SliderItem/SliderItem';
 import { StyledPaginationItem, Wrapper } from './SimpleSlider.styles';

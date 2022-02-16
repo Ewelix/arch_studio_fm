@@ -1,34 +1,25 @@
 {
-    "extends": ["react-app", "react-app/jest", "plugin:prettier/recommended", "prettier", "plugin:import/recommended"],
-    "plugins": ["prettier", "import"],
-    "rules": {
-        "prettier/prettier": ["warn", {
-            "singleQuote": true,
-            "printWidth": 150
-        }],
-        "import/order": [
-            "error",
-            {
-                "groups": ["builtin", "external", "internal"],
-                "pathGroups": [
-                    {
-                        "pattern": "react",
-                        "group": "external",
-                        "position": "before"
-                    }
-                ],
-                "pathGroupsExcludedImportTypes": ["react"],
-                "newlines-between": "always",
-                "alphabetize": {
-                    "order": "asc",
-                    "caseInsensitive": true
-                }
-            }
-        ]
-    },
-    "env": {
-        "browser": true,
-        "node": true,
-        "es6": true
-    }
+  "extends": [
+    "react-app",
+    "react-app/jest",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "plugins": [
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "warn",
+      {
+        "singleQuote": true,
+        "printWidth": 150
+      }
+    ]
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  }
 }

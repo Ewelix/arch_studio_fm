@@ -1,17 +1,18 @@
 import React from 'react';
+
+import LinkButton from '../LinkButton/LinkButton';
 import Logo from '../Logo/Logo';
 import MenuLinks from '../MenuLinks/MenuLinks';
-import LinkButton from '../LinkButton/LinkButton';
 import { Wrapper, LogoWrapper } from './Footer.styles';
 
 const Footer = () => {
   return (
     <Wrapper>
       <LogoWrapper>
-        <Logo/>
+        <Logo />
       </LogoWrapper>
-      <MenuLinks/>
-      <LinkButton to="/portfolio" text="See Our Portfolio"/>
+      <MenuLinks />
+      <LinkButton to="/portfolio" text="See Our Portfolio" />
     </Wrapper>
   );
 };

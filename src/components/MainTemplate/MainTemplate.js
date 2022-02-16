@@ -1,8 +1,9 @@
 import React from 'react';
-import Nav from '../Nav/Nav';
-import Menu from '../Menu/Menu';
+
 import useCheckMobileScreen from '../../hooks/useCheckMobileScreen';
 import Footer from '../Footer/Footer';
+import Menu from '../Menu/Menu';
+import Nav from '../Nav/Nav';
 import NavSticker from '../NavSticker/NavSticker';
 import { Wrapper } from './MainTemplate.styles';
 
@@ -11,15 +12,17 @@ const MainTemplate = ({ children }) => {
   return (
     <Wrapper>
       <div>
-        {checkMobileScreen ? <Nav /> : (
+        {checkMobileScreen ? (
+          <Nav />
+        ) : (
           <>
             {/*<NavSticker/>*/}
-            <Menu/>
+            <Menu />
           </>
         )}
       </div>
       {children}
-      <Footer/>
+      <Footer />
     </Wrapper>
   );
 };

@@ -37,7 +37,7 @@ export const StyledMenu = styled.div`
         color: ${({ theme }) => theme.colors.black};
       }
     }
-    
+
     &:first-child {
       padding-right: 60px;
     }

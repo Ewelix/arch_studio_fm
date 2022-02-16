@@ -1,5 +1,5 @@
-import styled, { keyframes } from 'styled-components';
 import { Link } from 'react-router-dom';
+import styled, { keyframes } from 'styled-components';
 
 const ShowAnimation = keyframes`
   from {
@@ -17,8 +17,8 @@ export const Wrapper = styled.div`
   min-height: 70px;
   padding: 0 10px;
   position: relative;
-  
-  @media(${({theme}) => theme.device.s}) {
+
+  @media (${({ theme }) => theme.device.s}) {
     padding: 4% 0 3%;
   }
 
@@ -53,7 +53,7 @@ export const Navigation = styled.nav`
   padding: 30px 20px;
   background: ${({ theme }) => theme.colors.lightGray};
   animation: 0.3s 1 forwards ${ShowAnimation};
-  
+
   a {
     display: block;
     padding: 15px 30px;

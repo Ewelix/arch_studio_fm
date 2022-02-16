@@ -1,10 +1,22 @@
 import styled from 'styled-components';
 
 export const FormWrapper = styled.div`
-  @media(${({theme}) => theme.device.m}) {
+  @media (${({ theme }) => theme.device.m}) {
     flex-grow: 1;
   }
-  
+
+  input,
+  textarea {
+    font-size: ${({ theme }) => theme.fontSize.s};
+    font-weight: ${({ theme }) => theme.fontWeight.bold};
+    color: ${({ theme }) => theme.colors.black};
+    font-family: 'Spartan', sans-serif;
+
+    &:focus {
+      border-bottom-width: 2px;
+    }
+  }
+
   button {
     justify-content: center;
     width: 80px;
@@ -14,7 +26,7 @@ export const FormWrapper = styled.div`
     border: none;
     cursor: pointer;
   }
-  
+
   span {
     padding: 0;
   }
@@ -22,16 +34,20 @@ export const FormWrapper = styled.div`
 
 export const Wrapper = styled.div`
   padding: 20px;
-  
-  @media(${({theme}) => theme.device.m}) {
+
+  @media (${({ theme }) => theme.device.m}) {
     display: flex;
     gap: 10%;
-    padding: 0;
+    padding: 4% 0 0 0;
   }
-  
+
   h3 {
     @media (${({ theme }) => theme.device.s}) and (max-width: 677px) {
       white-space: unset;
+    }
+
+    @media (${({ theme }) => theme.device.m}) {
+      margin: 0;
     }
   }
 `;

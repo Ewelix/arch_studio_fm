@@ -1,14 +1,15 @@
 import React from 'react';
-import MenuLinks from '../MenuLinks/MenuLinks';
-import { StyledMenu } from './Menu.styles';
+
 import Logo from '../Logo/Logo';
 import { Wrapper } from '../MainTemplate/MainTemplate.styles';
+import MenuLinks from '../MenuLinks/MenuLinks';
 import NavSticker from '../NavSticker/NavSticker';
+import { StyledMenu } from './Menu.styles';
 
 const Menu = () => {
   return (
-    <Wrapper >
-      <NavSticker/>
+    <Wrapper>
+      <NavSticker />
       <StyledMenu>
         <Logo />
         <MenuLinks />

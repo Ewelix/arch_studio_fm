@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   position: relative;
-  margin-bottom: ${({theme}) => theme.sectionMargin};
+  margin-bottom: ${({ theme }) => theme.sectionMargin};
 
   .slick-dots {
     bottom: 0;
@@ -18,7 +18,7 @@ export const Wrapper = styled.div`
       :hover {
         background: ${({ theme }) => theme.colors.lightGray};
       }
-      
+
       &.slick-active {
         background: ${({ theme }) => theme.colors.black};
 

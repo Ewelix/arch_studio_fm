@@ -3,23 +3,26 @@ export const pageTextContent = {
     {
       id: 1,
       title: 'Project \n Paramour',
-      description: 'Project made for an art museum near Southwest London. Project Paramour is a statement of bold, modern architecture.'
+      description: 'Project made for an art museum near Southwest London. Project Paramour is a statement of bold, modern architecture.',
     },
     {
       id: 2,
       title: 'Seraph \n Station',
-      description: 'The Seraph Station project challenged us to design a unique station that would transport people through time. The result is a fresh and futuristic model inspired by space stations.'
+      description:
+        'The Seraph Station project challenged us to design a unique station that would transport people through time. The result is a fresh and futuristic model inspired by space stations.',
     },
     {
       id: 3,
       title: 'Federal II \n Tower',
-      description: 'A sequel theme project for a tower originally built in the 1800s. We achieved this with a striking look of brutal minimalism with modern touches.'
+      description:
+        'A sequel theme project for a tower originally built in the 1800s. We achieved this with a striking look of brutal minimalism with modern touches.',
     },
     {
       id: 4,
       title: 'Trinity Bank \n Tower',
-      description: 'Trinity Bank challenged us to make a concept for a 84 story building located in the middle of a city with a high earthquake frequency. For this project we used curves to blend design and stability to meet our objectives.'
-    }
+      description:
+        'Trinity Bank challenged us to make a concept for a 84 story building located in the middle of a city with a high earthquake frequency. For this project we used curves to blend design and stability to meet our objectives.',
+    },
   ],
   projects: [
     {
@@ -93,7 +96,7 @@ export const pageTextContent = {
       header: 'Contact',
       title: 'Tell us about your project',
       text: 'We’d love to hear more about your project. Please, leave a message below or give us a call. We have two offices, one in Texas and one in Tennessee. If you find yourself nearby, come say hello!',
-    }
+    },
   },
   leadersList: [
     {

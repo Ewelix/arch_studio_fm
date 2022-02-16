@@ -7,8 +7,8 @@ export const size = {
     l: 1024,
     xl: 1200,
     xxl: 1400,
-  }
-}
+  },
+};
 export const theme = {
   colors: {
     white: '#FFF',
@@ -44,5 +44,4 @@ export const theme = {
     xxl: `min-width: ${size.width.xxl}px`,
   },
   sectionMargin: '8%',
-}
-
+};

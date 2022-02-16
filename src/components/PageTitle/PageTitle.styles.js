@@ -3,14 +3,14 @@ import styled from 'styled-components';
 export const StyledTitle = styled.h2`
   display: none;
 
-  @media(${({theme}) => theme.device.m}) {
+  @media (${({ theme }) => theme.device.m}) {
     display: block;
     margin: 0;
-    color: ${({theme}) => theme.colors.lightGray};
-    font-size: ${({theme}) => theme.fontSize.xxl};
+    color: ${({ theme }) => theme.colors.lightGray};
+    font-size: ${({ theme }) => theme.fontSize.xxl};
   }
 
-  @media(${({theme}) => theme.device.xl}) {
-    font-size: ${({theme}) => theme.fontSize.xxxl};
+  @media (${({ theme }) => theme.device.xl}) {
+    font-size: ${({ theme }) => theme.fontSize.xxxl};
   }
-`
+`;

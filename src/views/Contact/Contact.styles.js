@@ -2,9 +2,8 @@ import styled from 'styled-components';
 
 export const SectionWrapper = styled.div`
   padding: 5px 20px;
-  margin-bottom: ${({theme}) => theme.sectionMargin};
 
-  @media(${({theme}) => theme.device.l}) {
+  @media (${({ theme }) => theme.device.l}) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -13,17 +12,17 @@ export const SectionWrapper = styled.div`
 
   & + .map-img {
     flex-basis: 100%;
-    margin: 7% auto ${({theme}) => theme.sectionMargin};
+    margin: 7% auto ${({ theme }) => theme.sectionMargin};
   }
 
   h3 {
-    @media(${({theme}) => theme.device.m}) {
+    @media (${({ theme }) => theme.device.m}) {
       white-space: unset;
     }
 
-    @media(${({theme}) => theme.device.l}) {
+    @media (${({ theme }) => theme.device.l}) {
       margin: 0;
       white-space: pre-line;
     }
   }
-`
+`;

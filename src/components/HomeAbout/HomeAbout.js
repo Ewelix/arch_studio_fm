@@ -1,7 +1,8 @@
 import React from 'react';
+
+import LinkButton from '../LinkButton/LinkButton';
 import SectionTitle from '../SectionTitle/SectionTitle';
 import { Wrapper, SectionContainer, SectionContent } from './HomeAbout.styles';
-import LinkButton from '../LinkButton/LinkButton';
 
 const HomeAbout = () => {
   return (
@@ -9,7 +10,7 @@ const HomeAbout = () => {
       <SectionContainer>
         <SectionContent>
           <SectionTitle title={`Small team, \n big ideas`} />
-          <LinkButton text="About Us" to="/about"/>
+          <LinkButton text="About Us" to="/about" />
         </SectionContent>
       </SectionContainer>
     </Wrapper>

@@ -1,9 +1,10 @@
 import React from 'react';
-import SectionTitle from '../SectionTitle/SectionTitle';
-import PortfolioListItem from '../PortfolioListItem/PortfolioListItem';
-import LinkButton from '../LinkButton/LinkButton';
+
 import { pageTextContent } from '../../data/pageTextContent';
+import LinkButton from '../LinkButton/LinkButton';
 import { StyledList } from '../PortfolioList/PortfolioList.styles';
+import PortfolioListItem from '../PortfolioListItem/PortfolioListItem';
+import SectionTitle from '../SectionTitle/SectionTitle';
 import { Wrapper } from './HomePortfolio.styles';
 
 const HomePortfolio = () => {

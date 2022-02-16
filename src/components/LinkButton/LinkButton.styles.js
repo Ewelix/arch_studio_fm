@@ -1,5 +1,5 @@
-import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
 export const StyledButton = styled(Link)`
   display: flex;
@@ -10,15 +10,15 @@ export const StyledButton = styled(Link)`
   color: ${({ theme }) => theme.colors.white};
   font-size: ${({ theme }) => theme.fontSize.xxs};
   font-weight: ${({ theme }) => theme.fontWeight.bold};
-  
+
   &:hover {
     background: ${({ theme }) => theme.colors.darkGray};
   }
-  
+
   &:active {
     background: ${({ theme }) => theme.colors.mediumLightGray};
   }
-  
+
   span {
     display: inline-block;
     padding-right: 20px;

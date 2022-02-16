@@ -1,7 +1,8 @@
 import styled from 'styled-components';
+
+import imgL from '../../assets/desktop/image-small-team.jpg';
 import imgS from '../../assets/mobile/image-small-team.jpg';
 import imgM from '../../assets/tablet/image-small-team.jpg';
-import imgL from '../../assets/desktop/image-small-team.jpg';
 
 export const Wrapper = styled.div`
   position: relative;
@@ -11,19 +12,19 @@ export const Wrapper = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
 
-  @media(${({theme}) => theme.device.m}) {
+  @media (${({ theme }) => theme.device.m}) {
     background-image: url(${imgM});
-    margin-bottom: ${({theme}) => theme.sectionMargin};
+    margin-bottom: ${({ theme }) => theme.sectionMargin};
   }
 
-  @media(${({theme}) => theme.device.xl}) {
+  @media (${({ theme }) => theme.device.xl}) {
     background-image: url(${imgL});
   }
 `;
 
 export const SectionContainer = styled.div`
   z-index: 1;
-  
+
   &::before {
     position: absolute;
     content: '';
@@ -31,12 +32,12 @@ export const SectionContainer = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, .50);
+    background-color: rgba(0, 0, 0, 0.5);
   }
-  
+
   h3 {
     margin-top: 0;
-    color: ${({theme}) => theme.colors.white};
+    color: ${({ theme }) => theme.colors.white};
   }
 `;
 
@@ -45,8 +46,8 @@ export const SectionContent = styled.div`
   z-index: 2;
   top: calc((560px - 250px) / 2);
   left: 10%;
-  
-  @media(${({theme}) => theme.device.xl}) {
+
+  @media (${({ theme }) => theme.device.xl}) {
     left: 17.5%;
   }
 `;

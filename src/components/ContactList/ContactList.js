@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { pageTextContent } from '../../data/pageTextContent';
 import ContactListItem from '../ContactListItem/ContactListItem';
 
@@ -8,7 +9,7 @@ const ContactList = () => {
   return (
     <>
       {contactDetails.map((userData, index) => {
-        return <ContactListItem userData={userData} key={index} index={index} />;
+        return <ContactListItem userData={userData} key={index} index={index} isButtonRequired />;
       })}
     </>
   );

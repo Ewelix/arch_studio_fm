@@ -1,14 +1,10 @@
 import React, { useState } from 'react';
-import {
-  Wrapper,
-  Navigation,
-  StyledLink,
-  MenuToggleButton,
-} from './Nav.styles';
-import { ReactComponent as HamburgerIcon } from './../../assets/icons/icon-hamburger.svg';
-import { ReactComponent as CloseIcon } from './../../assets/icons/icon-close.svg';
-import MenuLinks from '../MenuLinks/MenuLinks';
+
 import Logo from '../Logo/Logo';
+import MenuLinks from '../MenuLinks/MenuLinks';
+import { ReactComponent as CloseIcon } from './../../assets/icons/icon-close.svg';
+import { ReactComponent as HamburgerIcon } from './../../assets/icons/icon-hamburger.svg';
+import { MenuToggleButton, Navigation, Wrapper } from './Nav.styles';
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);

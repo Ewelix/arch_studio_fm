@@ -1,10 +1,11 @@
 import styled from 'styled-components';
+
 import { StyledSocialMedia } from '../SocialMediaLinks/SocialMediaLinks.styles';
 
 export const ImageContainer = styled.div`
   @media (${({ theme }) => theme.device.m}) {
     position: relative;
-    
+
     &::before {
       position: absolute;
       top: 0;
@@ -29,8 +30,8 @@ export const StyledListItem = styled.div`
 
     &:hover ${StyledSocialMedia} {
       opacity: 1;
-    }    
-    
+    }
+
     &:hover ${ImageContainer}::before {
       opacity: 1;
     }

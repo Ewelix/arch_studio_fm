@@ -29,9 +29,9 @@ export const GlobalStyle = createGlobalStyle`
   }
   
   p {
-    color: ${({theme}) => theme.colors.darkGray};
-    font-size: ${({theme}) => theme.fontSize.xxs};
-    font-weight: ${({theme}) => theme.fontWeight.medium};
+    color: ${({ theme }) => theme.colors.darkGray};
+    font-size: ${({ theme }) => theme.fontSize.xxs};
+    font-weight: ${({ theme }) => theme.fontWeight.medium};
     line-height: 25px;
   }
 `;

@@ -1,6 +1,7 @@
 import React from 'react';
-import { ReactComponent as TwitterIcon } from '../../assets/icons/icon-twitter.svg';
+
 import { ReactComponent as LinkedinIcon } from '../../assets/icons/icon-linkedin.svg';
+import { ReactComponent as TwitterIcon } from '../../assets/icons/icon-twitter.svg';
 import { StyledSocialMedia } from './SocialMediaLinks.styles';
 
 const SocialMediaLinks = () => {

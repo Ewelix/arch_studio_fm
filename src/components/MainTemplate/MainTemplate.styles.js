@@ -5,17 +5,17 @@ export const Wrapper = styled.div`
   margin: 0 auto;
   overflow: hidden;
 
-  @media(${({theme}) => theme.device.m}) {
+  @media (${({ theme }) => theme.device.m}) {
     max-width: 700px;
     overflow: visible;
     position: relative;
   }
 
-  @media(${({theme}) => theme.device.l}) {
+  @media (${({ theme }) => theme.device.l}) {
     max-width: 900px;
   }
 
-  @media(${({theme}) => theme.device.xl}) {
+  @media (${({ theme }) => theme.device.xl}) {
     max-width: 1100px;
   }
 `;
