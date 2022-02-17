@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 import FormField from '../FormField/FormField';
 import LinkButton from '../LinkButton/LinkButton';
@@ -19,6 +19,7 @@ const Form = ({ submitForm }) => {
   const [errors, setErrors] = useState({});
   const [dataIsCorrect, setDataIsCorrect] = useState(false);
   const { name, email, message } = formValues;
+  const ref = useRef(null);
 
   const handleInputChange = (e) => {
     setValues({
@@ -33,24 +34,30 @@ const Form = ({ submitForm }) => {
     setDataIsCorrect(true);
 
     fetch(url, {
-      method: "POST",
+      method: 'POST',
       body: JSON.stringify(formValues),
       headers: {
-        "Content-Type": "application/json"
-      }
+        'Content-Type': 'application/json',
+      },
     })
-      .then(response => response.json())
-      .then(data => console.log(data))
-      .catch(error => console.log(error))
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .catch((error) => console.log(error));
 
     setValues(initialFormState);
   };
 
   useEffect(() => {
     if (Object.keys(errors).length === 0 && dataIsCorrect) {
-      submitForm(true)
+      submitForm(true);
     }
-  })
+  });
+
+  useEffect(() => {
+    if (ref.current) {
+      ref.current.focus();
+    }
+  });
 
   return (
     <Wrapper>
@@ -63,7 +70,10 @@ const Form = ({ submitForm }) => {
           value={name}
           onChange={handleInputChange}
           errors={errors}
+          ref={ref}
         />
+        {errors.name && <p className="error">{errors.name}</p>}
+
         <FormField
           label="Email"
           id="email"
@@ -71,6 +81,7 @@ const Form = ({ submitForm }) => {
           value={email}
           onChange={handleInputChange}
           errors={errors}
+          ref={ref}
         />
         <FormField
           label="Message"
@@ -80,6 +91,7 @@ const Form = ({ submitForm }) => {
           value={message}
           onChange={handleInputChange}
           errors={errors}
+          ref={ref}
         />
         <LinkButton as="button" />
       </FormWrapper>
