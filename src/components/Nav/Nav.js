@@ -9,15 +9,17 @@ import { MenuToggleButton, Navigation, Wrapper } from './Nav.styles';
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleClick = () => setIsOpen((prev) => !prev);
+
   return (
     <Wrapper isOpen={isOpen}>
       <Logo />
-      <MenuToggleButton onClick={() => setIsOpen((prev) => !prev)}>
+      <MenuToggleButton onClick={handleClick}>
         {isOpen ? <CloseIcon /> : <HamburgerIcon />}
       </MenuToggleButton>
 
       <Navigation isOpen={isOpen}>
-        <MenuLinks />
+        <MenuLinks handleClick={handleClick} />
       </Navigation>
     </Wrapper>
   );

@@ -2,12 +2,18 @@ import React from 'react';
 
 import { StyledLink } from './MenuLinks.styles';
 
-const MenuLinks = () => {
+const MenuLinks = ({ handleClick }) => {
   return (
     <>
-      <StyledLink to="/portfolio">Portfolio</StyledLink>
-      <StyledLink to="/about">About Us</StyledLink>
-      <StyledLink to="/contact">Contact</StyledLink>
+      <StyledLink to="/portfolio" onClick={handleClick}>
+        Portfolio
+      </StyledLink>
+      <StyledLink to="/about" onClick={handleClick}>
+        About Us
+      </StyledLink>
+      <StyledLink to="/contact" onClick={handleClick}>
+        Contact
+      </StyledLink>
     </>
   );
 };
