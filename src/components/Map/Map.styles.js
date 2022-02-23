@@ -4,6 +4,7 @@ export const MapWrapper = styled.div`
   margin: ${({ theme }) => theme.sectionMargin} 0;
 
   .leaflet-container {
+    z-index: 1;
     min-height: 360px;
     width: 100%;
 

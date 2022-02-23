@@ -11,12 +11,15 @@ const ShowAnimation = keyframes`
 `;
 
 export const Wrapper = styled.div`
+  position: fixed;
+  z-index: 9;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   min-height: 70px;
   padding: 0 10px;
-  position: relative;
+  background: ${({ theme }) => theme.colors.white};
 
   @media (${({ theme }) => theme.device.s}) {
     padding: 4% 0 3%;
