@@ -5,25 +5,30 @@ export const Wrapper = styled.div`
   margin-bottom: ${({ theme }) => theme.sectionMargin};
 
   .slick-dots {
-    bottom: 0;
-    left: calc(-50% + 80px);
+    display: none !important;
 
-    li {
-      width: 80px;
-      height: 80px;
-      margin: 0;
-      background: ${({ theme }) => theme.colors.white};
-      transition: background-color 0.5s;
+    @media (${({ theme }) => theme.device.l}) {
+      display: block !important;
+      bottom: 0;
+      left: calc(-50% + 80px);
 
-      :hover {
-        background: ${({ theme }) => theme.colors.lightGray};
-      }
+      li {
+        width: 80px;
+        height: 80px;
+        margin: 0;
+        background: ${({ theme }) => theme.colors.white};
+        transition: background-color 0.5s;
 
-      &.slick-active {
-        background: ${({ theme }) => theme.colors.black};
+        :hover {
+          background: ${({ theme }) => theme.colors.lightGray};
+        }
 
-        div {
-          color: ${({ theme }) => theme.colors.white};
+        &.slick-active {
+          background: ${({ theme }) => theme.colors.black};
+
+          div {
+            color: ${({ theme }) => theme.colors.white};
+          }
         }
       }
     }
