@@ -53,12 +53,6 @@ const Form = ({ submitForm }) => {
     }
   });
 
-  useEffect(() => {
-    if (ref.current) {
-      ref.current.focus();
-    }
-  });
-
   return (
     <Wrapper>
       <SectionTitle title={`Connect \n with us`} />
@@ -70,7 +64,6 @@ const Form = ({ submitForm }) => {
           value={name}
           onChange={handleInputChange}
           errors={errors}
-          ref={ref}
         />
         {errors.name && <p className="error">{errors.name}</p>}
 
@@ -81,7 +74,6 @@ const Form = ({ submitForm }) => {
           value={email}
           onChange={handleInputChange}
           errors={errors}
-          ref={ref}
         />
         <FormField
           label="Message"
@@ -91,7 +83,6 @@ const Form = ({ submitForm }) => {
           value={message}
           onChange={handleInputChange}
           errors={errors}
-          ref={ref}
         />
         <LinkButton as="button" />
       </FormWrapper>
