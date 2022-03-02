@@ -13,6 +13,7 @@ import useCheckMobileScreen from '../../hooks/useCheckMobileScreen';
 
 const IntroSection = ({ header, title, text, type }) => {
   const checkMobileScreen = useCheckMobileScreen();
+  
   return (
     <Wrapper>
       <ImageWrapper>

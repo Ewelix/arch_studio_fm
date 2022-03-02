@@ -5,7 +5,6 @@ import Footer from '../Footer/Footer';
 import Menu from '../Menu/Menu';
 import Nav from '../Nav/Nav';
 import useCheckMobileScreen from '../../hooks/useCheckMobileScreen';
-
 import { Wrapper } from './MainTemplate.styles';
 
 const MainTemplate = () => {

@@ -25,13 +25,16 @@ export const Wrapper = styled.div`
       padding: 0;
     }
   }
+  
+  .project-link {
+    position: relative;
 
-  .project {
     @media (${({ theme }) => theme.device.s}) {
       &::before {
         position: absolute;
         z-index: 5;
         right: 15px;
+        color: ${({ theme }) => theme.colors.white};
         font-size: ${({ theme }) => theme.fontSize.xxxl};
         font-weight: ${({ theme }) => theme.fontWeight.bold};
         opacity: 0.5;
@@ -54,7 +57,6 @@ export const Wrapper = styled.div`
       &::before {
         right: -15px;
       }
-    }
     }
   }
 
