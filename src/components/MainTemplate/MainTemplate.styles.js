@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 export const Wrapper = styled.div`
   max-width: 575px;
@@ -18,4 +18,35 @@ export const Wrapper = styled.div`
   @media (${({ theme }) => theme.device.xl}) {
     max-width: 1100px;
   }
+`;
+
+export const ContentWrapper = styled.div`
+  .fade-enter {
+    opacity: 0.01;
+  }
+
+  .fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms ease-in;
+  }
+
+  .fade-exit {
+    opacity: 1;
+  }
+
+  .fade-exit.fade-exit-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+  }
+
+  //div.transition-group {
+  //  position: relative;
+  //}
+  //
+  //section.route-section {
+  //  position: absolute;
+  //  width: 100%;
+  //  top: 0;
+  //  left: 0;
+  //}
 `;

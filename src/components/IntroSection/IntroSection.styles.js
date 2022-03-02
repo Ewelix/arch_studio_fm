@@ -32,6 +32,7 @@ export const ImageWrapper = styled.div`
     @media (${({ theme }) => theme.device.m}) {
       max-width: 635px;
       margin: 0 auto;
+      height: 720px;
     }
   }
 `;
@@ -69,11 +70,9 @@ export const SectionWrapper = styled.div`
   }
 
   h2 {
-    @media (${({ theme }) => theme.device.m}) {
-      position: absolute;
-      top: -20%;
-      right: 0;
-    }
+    position: absolute;
+    top: -20%;
+    right: 0;
 
     @media (${({ theme }) => theme.device.xl}) {
       top: -31%;

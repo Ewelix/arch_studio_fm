@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
 export const StyledTitle = styled.h2`
-  display: none;
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
 
   @media (${({ theme }) => theme.device.m}) {
-    display: block;
+    opacity: 1;
     margin: 0;
     color: ${({ theme }) => theme.colors.lightGray};
     font-size: ${({ theme }) => theme.fontSize.xxl};
