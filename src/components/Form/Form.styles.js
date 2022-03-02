@@ -5,18 +5,6 @@ export const FormWrapper = styled.div`
     flex-grow: 1;
   }
 
-  input,
-  textarea {
-    font-size: ${({ theme }) => theme.fontSize.s};
-    font-weight: ${({ theme }) => theme.fontWeight.bold};
-    color: ${({ theme }) => theme.colors.black};
-    font-family: 'Spartan', sans-serif;
-
-    &:focus {
-      border-bottom-width: 2px;
-    }
-  }
-
   button {
     justify-content: center;
     width: 80px;

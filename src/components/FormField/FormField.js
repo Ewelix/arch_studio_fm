@@ -11,6 +11,7 @@ const FormField = ({
   value,
   name,
   id,
+  label,
   type = 'text',
   errors,
   ...props
@@ -21,7 +22,7 @@ const FormField = ({
         <Textarea
           name={name}
           id={id}
-          placeholder={name}
+          placeholder={label}
           value={value}
           onChange={onChange}
         />
@@ -30,7 +31,7 @@ const FormField = ({
           name={name}
           id={id}
           type={type}
-          placeholder={name}
+          placeholder={label}
           value={value}
           onChange={onChange}
         />
