@@ -1,5 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 
+import emailjs from 'emailjs-com';
+
 import FormField from '../FormField/FormField';
 import LinkButton from '../LinkButton/LinkButton';
 import SectionTitle from '../SectionTitle/SectionTitle';
@@ -33,16 +35,18 @@ const Form = ({ submitForm }) => {
     setErrors(validation(formValues));
     setDataIsCorrect(true);
 
-    fetch(url, {
-      method: 'POST',
-      body: JSON.stringify(formValues),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    })
-      .then((response) => response.json())
-      .then((data) => console.log(data))
-      .catch((error) => console.log(error));
+    // console.log('formValues', formValues);
+
+    emailjs
+      .sendForm('gmail', 'template_6bq3nn4', e.target, 'tBjgonc_GsSUavTHS')
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
 
     setValues(initialFormState);
   };
