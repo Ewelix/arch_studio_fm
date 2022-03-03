@@ -32,7 +32,6 @@ const Form = ({ submitForm }) => {
 
     if (Object.keys(errorMessage).length) {
       setErrors(errorMessage);
-      console.log('blad');
       return;
     }
 
@@ -49,7 +48,7 @@ const Form = ({ submitForm }) => {
       setValues(initialFormState);
       submitForm(true);
     } catch {
-      setErrors('Blad wysylania wiadomosci');
+      setErrors('Something went wrong');
     }
   };
 
