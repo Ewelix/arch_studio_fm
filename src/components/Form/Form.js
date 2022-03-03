@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 
 import emailjs from 'emailjs-com';
-
 import FormField from '../FormField/FormField';
 import LinkButton from '../LinkButton/LinkButton';
 import SectionTitle from '../SectionTitle/SectionTitle';
@@ -14,14 +13,11 @@ const initialFormState = {
   message: '',
 };
 
-const url = 'https://jsonplaceholder.typicode.com/posts';
-
 const Form = ({ submitForm }) => {
   const [formValues, setValues] = useState(initialFormState);
   const [errors, setErrors] = useState({});
   const [dataIsCorrect, setDataIsCorrect] = useState(false);
   const { name, email, message } = formValues;
-  const ref = useRef(null);
 
   const handleInputChange = (e) => {
     setValues({
@@ -30,32 +26,38 @@ const Form = ({ submitForm }) => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setErrors(validation(formValues));
+    const errorMessage = validation(formValues);
+
+    if (errorMessage) {
+      setErrors(errorMessage);
+      console.log('blad');
+      return;
+    }
+
     setDataIsCorrect(true);
 
-    // console.log('formValues', formValues);
-
-    emailjs
-      .sendForm('gmail', 'template_6bq3nn4', e.target, 'tBjgonc_GsSUavTHS')
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
+    try {
+      await emailjs.sendForm(
+        'gmail',
+        'template_6bq3nn4',
+        e.target,
+        'tBjgonc_GsSUavTHS'
       );
-
-    setValues(initialFormState);
+      setErrors({});
+      setValues(initialFormState);
+      submitForm(true);
+    } catch {
+      setErrors('Blad wysylania wiadomosci');
+    }
   };
 
   useEffect(() => {
     if (Object.keys(errors).length === 0 && dataIsCorrect) {
       submitForm(true);
     }
-  });
+  }, [errors]);
 
   return (
     <Wrapper>
@@ -69,16 +71,18 @@ const Form = ({ submitForm }) => {
           onChange={handleInputChange}
           errors={errors}
         />
-        {errors.name && <p className="error">{errors.name}</p>}
+        {errors.name && <p>{errors.name}</p>}
 
         <FormField
           label="Email"
           id="email"
           name="email"
           value={email}
+          type="email"
           onChange={handleInputChange}
           errors={errors}
         />
+        {errors.email && <p>{errors.email}</p>}
         <FormField
           label="Message"
           id="message"
@@ -88,6 +92,7 @@ const Form = ({ submitForm }) => {
           onChange={handleInputChange}
           errors={errors}
         />
+        {errors.message && <p>{errors.message}</p>}
         <LinkButton as="button" />
       </FormWrapper>
     </Wrapper>

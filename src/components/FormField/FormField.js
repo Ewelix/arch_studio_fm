@@ -6,16 +6,7 @@ import { Input } from '../Input/Input';
 import { Textarea } from '../Textarea/Textarea';
 import { Wrapper } from './FormField.styles';
 
-const FormField = ({
-  onChange,
-  value,
-  name,
-  id,
-  label,
-  type = 'text',
-  errors,
-  ...props
-}) => {
+const FormField = ({ onChange, value, name, id, label, type = 'text' }) => {
   return (
     <Wrapper>
       {type === 'textarea' ? (
@@ -25,6 +16,7 @@ const FormField = ({
           placeholder={label}
           value={value}
           onChange={onChange}
+          required
         />
       ) : (
         <Input
@@ -34,6 +26,7 @@ const FormField = ({
           placeholder={label}
           value={value}
           onChange={onChange}
+          required
         />
       )}
     </Wrapper>

@@ -15,7 +15,6 @@ const Contact = () => {
     intro: { contact },
   } = pageTextContent;
   const [isSubmitted, setIsSubmitted] = useState(false);
-
   const submitForm = () => setIsSubmitted(true);
 
   return (
@@ -26,8 +25,7 @@ const Contact = () => {
         <ContactList />
       </SectionWrapper>
       <Map />
-      {isSubmitted && <FormSuccessMessage />}
-      <Form submitForm={submitForm} />
+      {!isSubmitted ? <Form submitForm={submitForm} /> : <FormSuccessMessage />}
     </Wrapper>
   );
 };
