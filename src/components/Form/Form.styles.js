@@ -38,4 +38,9 @@ export const Wrapper = styled.div`
       margin: 0;
     }
   }
+
+  .error {
+    color: red;
+    font-weight: ${({ theme }) => theme.fontWeight.bold};
+  }
 `;

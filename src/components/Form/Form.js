@@ -71,7 +71,7 @@ const Form = ({ submitForm }) => {
           onChange={handleInputChange}
           errors={errors}
         />
-        {errors.name && <p>{errors.name}</p>}
+        {errors.name && <p className="error">{errors.name}</p>}
         <FormField
           label="Email"
           id="email"
@@ -81,7 +81,7 @@ const Form = ({ submitForm }) => {
           onChange={handleInputChange}
           errors={errors}
         />
-        {errors.email && <p>{errors.email}</p>}
+        {errors.email && <p className="error">{errors.email}</p>}
         <FormField
           label="Message"
           id="message"
@@ -91,7 +91,7 @@ const Form = ({ submitForm }) => {
           onChange={handleInputChange}
           errors={errors}
         />
-        {errors.message && <p>{errors.message}</p>}
+        {errors.message && <p className="error">{errors.message}</p>}
         <LinkButton as="button" />
       </FormWrapper>
     </Wrapper>
