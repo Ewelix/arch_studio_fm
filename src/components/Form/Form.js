@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import emailjs from 'emailjs-com';
 import FormField from '../FormField/FormField';
@@ -30,7 +30,7 @@ const Form = ({ submitForm }) => {
     e.preventDefault();
     const errorMessage = validation(formValues);
 
-    if (errorMessage) {
+    if (Object.keys(errorMessage).length) {
       setErrors(errorMessage);
       console.log('blad');
       return;
@@ -43,7 +43,7 @@ const Form = ({ submitForm }) => {
         'gmail',
         'template_6bq3nn4',
         e.target,
-        process.env.EMAILJS_USER_ID
+        process.env.REACT_APP_EMAILJS_USER_ID
       );
       setErrors({});
       setValues(initialFormState);

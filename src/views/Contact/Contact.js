@@ -25,7 +25,8 @@ const Contact = () => {
         <ContactList />
       </SectionWrapper>
       <Map />
-      {!isSubmitted ? <Form submitForm={submitForm} /> : <FormSuccessMessage />}
+      {isSubmitted && <FormSuccessMessage />}
+      <Form submitForm={submitForm} />
     </Wrapper>
   );
 };
