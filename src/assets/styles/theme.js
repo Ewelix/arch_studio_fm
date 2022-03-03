@@ -1,6 +1,5 @@
 export const size = {
   width: {
-    // xxs: 360,
     xs: 420,
     s: 575,
     m: 768,

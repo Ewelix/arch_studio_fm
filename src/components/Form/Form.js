@@ -32,6 +32,7 @@ const Form = ({ submitForm }) => {
 
     if (Object.keys(errorMessage).length) {
       setErrors(errorMessage);
+      setValues(initialFormState);
       return;
     }
 
@@ -71,7 +72,6 @@ const Form = ({ submitForm }) => {
           errors={errors}
         />
         {errors.name && <p>{errors.name}</p>}
-
         <FormField
           label="Email"
           id="email"

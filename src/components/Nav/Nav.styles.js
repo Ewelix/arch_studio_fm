@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 
 const ShowAnimation = keyframes`
@@ -42,8 +41,6 @@ export const MenuToggleButton = styled.button`
   background: ${({ theme }) => theme.colors.white};
   border: none;
 `;
-
-export const Logo = styled(Link)``;
 
 export const Navigation = styled.nav`
   display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};

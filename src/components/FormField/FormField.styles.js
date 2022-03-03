@@ -45,4 +45,10 @@ export const Wrapper = styled.div`
       box-shadow: 0px -1px 0px ${({ theme }) => theme.colors.black} inset;
     }
   }
+
+  p {
+    position: absolute;
+    color: red;
+    font-weight: ${({ theme }) => theme.fontWeight.bold};
+  }
 `;

@@ -8,7 +8,6 @@ import { MenuToggleButton, Navigation, Wrapper } from './Nav.styles';
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   const handleClick = () => setIsOpen((prev) => !prev);
 
   return (

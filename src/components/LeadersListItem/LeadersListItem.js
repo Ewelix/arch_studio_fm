@@ -1,15 +1,20 @@
-import React, { useContext } from 'react';
+import React from 'react';
 
 import SocialMediaLinks from '../SocialMediaLinks/SocialMediaLinks';
-import { StyledListItem, StyledItemTitle, StyledItemSubtitle, ImageContainer } from './LeadersListItem.styles';
-
-// import { ImageWrapper } from '../../components/IntroSection/IntroSection.styles';
+import {
+  StyledListItem,
+  StyledItemTitle,
+  StyledItemSubtitle,
+  ImageContainer,
+} from './LeadersListItem.styles';
 
 function importAll(r) {
   return r.keys().map(r);
 }
 
-const images = importAll(require.context('../../assets/avatars', false, /\.(png|jpe?g|svg)$/));
+const images = importAll(
+  require.context('../../assets/avatars', false, /\.(png|jpe?g|svg)$/)
+);
 
 const LeadersListItem = ({ name, position, i }) => {
   return (

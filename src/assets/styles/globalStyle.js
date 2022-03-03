@@ -6,7 +6,6 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  //dobra praktyka, zeby wszytskie elementy dziedziczyly od htmla box-sizing
   *, *::after, *::before {
     box-sizing: inherit;
   }

@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   max-width: 575px;
@@ -38,15 +38,4 @@ export const ContentWrapper = styled.div`
     opacity: 0.01;
     transition: opacity 300ms ease-in;
   }
-
-  //div.transition-group {
-  //  position: relative;
-  //}
-  //
-  //section.route-section {
-  //  position: absolute;
-  //  width: 100%;
-  //  top: 0;
-  //  left: 0;
-  //}
 `;

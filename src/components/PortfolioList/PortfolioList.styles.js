@@ -47,8 +47,6 @@ import project12S from '../../assets/portfolio/mobile/image-paramour.jpg';
 import project12M from '../../assets/portfolio/tablet/image-paramour.jpg';
 import project12L from '../../assets/portfolio/desktop/image-paramour.jpg';
 
-// przedrostek Styled dla generycznych elementow
-
 export const StyledList = styled.ul`
   width: 100%;
   padding: 0 20px 30px;
@@ -99,7 +97,7 @@ export const StyledList = styled.ul`
       content: '';
       background-color: rgba(0, 0, 0, 20%);
     }
-    
+
     &:hover {
       opacity: 0.7;
       cursor: pointer;

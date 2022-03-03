@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 import { SectionContainer } from '../../views/About/About.styles';
-import PageTitle from '../PageTitle/PageTitle';
 
 export const Wrapper = styled.div`
   padding: 30px 20px;
