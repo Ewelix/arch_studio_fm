@@ -4,7 +4,7 @@ Multi page website built as a solution to the [Frontend Mentor challenge](https:
 
 ## ⚡ Demo
 
-Here is a working live demo: arch-studio-fm.herokuapp.com/
+Here is a working live demo: https://arch-studio-fm.herokuapp.com/
 
 ![demo screenshot](src/assets/desktop/preview.jpg)
 
